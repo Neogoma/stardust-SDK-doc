@@ -44,3 +44,9 @@ public void CreateObjectAfterRelocation()
 
 ## Data quality
 To increase the accuracy of relocation, try to update the map at different times of the day and/or with different lighting conditions.
+
+## Video example
+Here is a video example of the update process as well as visual results.
+[![How to create asset bundle](https://img.youtube.com/vi/i2KkFCybgjc/0.jpg)](https://www.youtube.com/watch?v=i2KkFCybgjc)
+
+
