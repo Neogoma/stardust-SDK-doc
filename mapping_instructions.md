@@ -7,6 +7,9 @@
 Unlike previous versions our mapping strategy is focused on collecting good quality data rather than a maximum of datas.
 As a result the frames will be captured when we detect you moved in a significant way rather than at regular intervals.
 
+## How to relocate
+Go to a place or near a place that you already mapped then try to relocate there. Make sure you stand still in order to avoid frame blurriness.
+
 ## Examples
 ### Good mapping example
 The following video is a simple example of **GOOD MAPPING**.
