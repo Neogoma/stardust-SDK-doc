@@ -4,7 +4,15 @@
 
 ## How to map
 
-First start on the data capture, from there it will start
+### Quick explaination of the process
+1. __Start your mapping__ via UI or programatically
+2. __Collect the datas__ by walking around (make sure you consider the __uploaded datas__ and not the locally captured data)
+3. __Train your map__ once you have enough datas **uploaded** via UI or programatically
+4. [__Relocate__](#how-to-relocate) after receiving the notification, eventually update the map
+5. [__Update__ (Optional)](update_instructions.md) in order to have more accurate relocations
+
+### Detailed explainations based on the Stardust World Scale AR app
+First start on the data capture, from there it will start regularly capturing the frames.
 
 If you use the mapper you will notice on the top that you have 2 numbers:
 ![Picture taken](_img/pic_upload.png)
@@ -23,12 +31,10 @@ If you didn't fully fill in your quota you can [update](update_instructions.md) 
 Unlike previous versions our mapping strategy is focused on collecting good quality data rather than a maximum of datas.
 As a result the frames will be captured when we detect you moved in a significant way rather than at regular intervals.
 
-
-
-
-
 ## How to relocate
-Go to a place or near a place that you already mapped then try to relocate there. Make sure you stand still in order to avoid frame blurriness.
+Go to a place or near a place that you __already mapped__ then try to relocate there.
+
+Make sure you __stand still__ when launching the relocation in order to avoid frame blurriness.
 
 ## Examples
 ### Good mapping example
