@@ -5,11 +5,11 @@
 ## How to map
 
 ### Quick explaination of the process
-1. __Start your mapping__ via UI or programatically
-2. __Collect the datas__ by walking around (make sure you consider the __uploaded datas__ and not the locally captured data)
-3. __Train your map__ once you have enough datas **uploaded** via UI or programatically
+1. __Start your mapping__ via UI or [programatically](comp_map_data_uploader.md#startstop-uploading-datas)
+2. __Collect the datas__ by walking around (make sure you consider the __uploaded datas__ and not the locally captured data). You can create objects along your mapping to create "reference positions".
+3. __Train your map__ once you have enough datas **uploaded** via UI or [programatically](comp_map_data_uploader.md#run-generation-new-map)
 4. [__Relocate__](#how-to-relocate) after receiving the notification, eventually update the map
-5. [__Update__ (Optional)](update_instructions.md) in order to have more accurate relocations
+5. [__Update__ (Optional)](update_instructions.md) via UI or [programatically](comp_map_data_uploader.md#run-update-existing-map)
 
 ### Detailed explainations based on the Stardust World Scale AR app
 First start on the data capture, from there it will start regularly capturing the frames.
@@ -35,6 +35,10 @@ As a result the frames will be captured when we detect you moved in a significan
 Go to a place or near a place that you __already mapped__ then try to relocate there.
 
 Make sure you __stand still__ when launching the relocation in order to avoid frame blurriness.
+
+**How do I know if I relocated properly ?**
+In the Stardust World Scale AR demo app, we show a 3D model that tells you where you started mapping.
+If you created objects, after relocation they should be close to where you were.
 
 ## Examples
 ### Good mapping example

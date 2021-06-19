@@ -8,10 +8,16 @@
 ## Update after relocation
 You can have a full example on how to update your map after relocating on the **UpdateAfterRelocateDemo** class.
 
-### Process
-1. First you need to listen to the __onPositionFound__ event from the **MapRelocationManager**
-2. When the position on map has been found, update the coordinate system of the **MapDataUploader**
-3. That's it! Now when the **MapDataUploader** will capture data, it will send these datas in proper map space
+### How to update (Stardust World Scale AR App)
+1. First you need to sucessfully relocate
+2. Then once you have been relocated you can click on the icon on the top right of the screen to launch the update process.
+3. Follow the [mapping instructions](mapping_instructions.md)
+
+### How to update (programatically)
+1. First you need to listen to the __onPositionFound__ event from the [**MapRelocationManager**](comp_map_relocation_manager.md)
+2. When the position on map has been found, update the coordinate system of the [**MapDataUploader**](comp_map_data_uploader.md)
+3. That's it! Now when the **MapDataUploader** will capture data, you can run the [data capture](comp_map_data_uploader.md#startstop-uploading-datas)
+4. When you're done with capturing data you can [run the update](comp_map_data_uploader.md#run-update-existing-map)
 
 ### Example
 ```cs
