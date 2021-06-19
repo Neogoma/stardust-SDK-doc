@@ -7,6 +7,13 @@
 Unlike previous versions our mapping strategy is focused on collecting good quality data rather than a maximum of datas.
 As a result the frames will be captured when we detect you moved in a significant way rather than at regular intervals.
 
+## Understanding the numbers on the Stardust World Scale AR demo
+
+If you use the mapper you will notice on the top that you have 2 numbers:
+![Picture taken](_img/pic_upload.png)
+* Pictures taken: represents the frames taken on your phone. They __*DO NOT*__ represent the final status of your map
+* Pictures uploaded: represents the frame sucessfully sent to server. __All these pictures will be part of the training.__
+
 ## How to relocate
 Go to a place or near a place that you already mapped then try to relocate there. Make sure you stand still in order to avoid frame blurriness.
 
