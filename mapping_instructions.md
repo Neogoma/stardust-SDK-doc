@@ -37,8 +37,9 @@ Go to a place or near a place that you __already mapped__ then try to relocate t
 Make sure you __stand still__ when launching the relocation in order to avoid frame blurriness.
 
 **How do I know if I relocated properly ?**
+
 In the Stardust World Scale AR demo app, we show a 3D model that tells you where you started mapping.
-If you created objects, after relocation they should be close to where you were.
+If you created objects, after relocation they should be close to where you put them.
 
 ## Examples
 ### Good mapping example
