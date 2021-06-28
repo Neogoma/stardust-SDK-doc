@@ -1,5 +1,8 @@
 # Update log
 
+## 0.56 
+* **SDK**
+    * Updating the data capture parameters
 
 ## 0.55 
 * **SDK**
