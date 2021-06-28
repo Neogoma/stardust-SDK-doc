@@ -4,7 +4,7 @@
 * **SDK**
     * Updating the data capture parameters
 
-## 0.55 
+## 0.55 "Hawkeye"
 * **SDK**
     * Updating the data capture method
 
