@@ -2,9 +2,11 @@
   * [Quick start](quickstart.md)
   * [Upgrade guide](upgrade_guide.md)
 
-* [Detailed instructions](detailed_instruction.md) 
+* Detailed instructions
+  * [Quick explaination of the process](detailed_instruction.md)
   * [Mapping instructions](mapping_instructions.md)
-  * [Update instructions](update_instructions.md)
+  * [How to relocate](how_relocate.md)
+  * [Update your maps](update_instructions.md)
 
 * Classes overview
   * [Session controller](comp_session_controller.md)

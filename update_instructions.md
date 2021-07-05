@@ -1,58 +1,10 @@
-# Specific update instructions
+### Update your maps
+Map updates are critical to anticipate the changes in your physical environment. As with most Machine Learning models, the more you map, the more you feed the model, hence the better relocation results. 
+There is no limit to the number of updates you can run. Just make sure you’re not over your max number of pictures per map. On the Stardust world-scale AR app, the update button on the relocate/update scene is only visible after successfully relocating. From there on, just continue your mapping as indicated above. 
+Remember, updating a map has 2 objectives:
 
-## Update
-- You can only update a map if it has already been generated.
-- In the update, you can scan places that were not previously mapped in the original mapping.
-- You can scan multiple updates before effectively run the update.
+* Covering areas that have not been mapped, with **as many viewpoints as possible**
+* Feeding the ML model with more data from a mapped space, **anticipating changes in the physical environment.** 
 
-## Update after relocation
-You can have a full example on how to update your map after relocating on the **UpdateAfterRelocateDemo** class.
-
-### How to update (Stardust World Scale AR App)
-1. First you need to sucessfully relocate
-2. Then once you have been relocated you can click on the icon on the top right of the screen to launch the update process.
-3. Follow the [mapping instructions](mapping_instructions.md)
-
-### How to update (programatically)
-1. First you need to listen to the __onPositionFound__ event from the [**MapRelocationManager**](comp_map_relocation_manager.md)
-2. When the position on map has been found, update the coordinate system of the [**MapDataUploader**](comp_map_data_uploader.md)
-3. That's it! Now when the **MapDataUploader** will capture data, you can run the [data capture](comp_map_data_uploader.md#startstop-uploading-datas)
-4. When you're done with capturing data you can [run the update](comp_map_data_uploader.md#run-update-existing-map)
-
-### Example
-```cs
-public void Awake()
-{
-    //1. Setup listeners for relocation    
-    MapRelocationManager.Instance.onPositionFound.AddListener(PositionFound);
-}
-
-private void PositionFound(RelocationResults positionMatched,CoordinateSystem newCoords)
-{        
-    //2. Update the coordinate system   
-    MapDataUploader.Instance.UpdateCoordinateSystem(newCoords);    
-}
-```
-
-## Creating objects during an update
-If you wish to add objects after relocation you can do so by specifying that you are sending the object in WORLD space in the object controller.
-```cs
-public void CreateObjectAfterRelocation()
-{
-    Vector3 position = cam.position + cam.forward*forwardCamera;
-    Quaternion rot = Quaternion.Euler(0,cam.rotation.eulerAngles.y,0);
-
-    //Specify world space so the object controller can automatically convert into map space when sending datas to API
-    ObjectController.Instance.CreateAndSaveObject(position, rot, Vector3.one, currentSession, selectedBundle, currentParent, ObjectController.CreationSpace.World);
-}
-```
-
-
-## Data quality
-To increase the accuracy of relocation, try to update the map at different times of the day and/or with different lighting conditions.
-
-## Video example
-Here is a video example of the update process as well as visual results.
-[![How to create asset bundle](https://img.youtube.com/vi/i2KkFCybgjc/0.jpg)](https://www.youtube.com/watch?v=i2KkFCybgjc)
-
+Lastly, remember to click TRAIN when you are done with a map update, otherwise the model won’t take into account your updates!
 

@@ -1,9 +1,9 @@
-## Basic theory
+## **Basic theory**
 Unlike previous versions, our mapping strategy is focused on collecting good quality data rather than a maximum of data. So the most important mapping instructions are:
 * Avoid blurry pictures, make sure your camera (or mapping device such as drone, smart glasses, etc) correctly focuses.
 * Walk slowly and avoid sharp turns to ensure that there are enough similarities between two frames 
 
-## Step by step explanations based on the Stardust World Scale AR app
+## **Step by step explanations based on the Stardust World Scale AR app**
 The demo apps are available on [__iOS App store__](https://apps.apple.com/us/app/stardust-world-scale-ar/id1551574766#?platform=iphone) and [__Android Play store__](https://play.google.com/store/apps/details?id=com.neogoma.stardust&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1). For Chinese users, please contact us directly if you need an APK. 
 
 Login into the app with your Stardust account. Open the scene “create new map” and input a map name. We’ll automatically assign a name if you lack inspiration. We’ve noticed it’s best to name the map after the place you’re mapping, it will avoid confusion. 
@@ -27,17 +27,17 @@ Once you think you uploaded enough pictures for your space (try to cover as much
 
 If you didn't fully fill in your quota you can [__update__](update_instructions.md) your map later.
 
-## Adding objects while mapping
+## **Adding objects while mapping**
 There are 2 ways to anchor 3D objects in your space: with the app while mapping or from the [__editor__](editor_commands.md). Creating objects while mapping is not only a good way to evaluate the accuracy of the relocation, but also to give you reference points for further creation. Just click on the + button to drop objects to your space. You can upload more objects from your dashboard, we are currently supporting .obj file and unity bundles.
 
 ![Picture taken](_img/map_object.png)
 
-## Adding navigation targets while mapping
+## **Adding navigation targets while mapping**
 Similar to objects creation, the app allows you to add destination targets while mapping. You need to name the targets first and click on + to add them in your space. After relocating, you will be able to navigate to each target independently.
 
 ![Picture taken](_img/map_navigate.png)
 
-## Where and what to map
+## **Where and what to map**
 __There is no physical limits to spaces you can map, but a couple of guidelines to keep in mind:__
 
 * Similar to the way human eyes work, a camera can’t map or recognize a completely dark space
@@ -56,7 +56,7 @@ As you can see below, the **first mapping in dark grey** was done to cover the m
 
 Warning: if you pause your mapping, remember to start over where you took the last frame! If there is no overlap between 2 frames, both relocation and SFM algorithms won’t be able to work.
 
-## Mapping Examples
+## **Mapping Examples**
 ### Good mapping example
 The following video is a simple example of **GOOD MAPPING.**
 
@@ -69,24 +69,9 @@ The following video is a simple example of **BAD MAPPING.**
 
 [Bad mapping](_videos/bad_mapping.mp4 ':include :type=video')
 
-**What is wrong ?**
+### **What is wrong ?**
+
 1. The user turned the camera fast so some frames will be low quality
 2. The user was running while mapping which made frame inconsistent in quality
 3. Because of the fast movements, maybe the SLAM data of the phones are also
 
-
-## HOW TO RELOCATE
-Go to a place or near a place that you already mapped then try to relocate there.
-Make sure you stand still when launching the relocation in order to avoid frame blurriness.
-
-**How do I know if I relocated properly ?**
-
-In the Stardust World Scale AR demo app, we show a 3D avatar that tells you where you started mapping. If you created objects, after relocation they should be close to where you put them. Look for that guy!
-
-![Picture taken](_img/map_relocateSuccess.png)
-
-Likely reasons you’ll have a FAILED relocation:
-* Blurry pictures while mapping or relocating
-* No enough frames uploaded while mapping
-* Too few updates
-* Trying to relocate in a place that has not been mapped 
