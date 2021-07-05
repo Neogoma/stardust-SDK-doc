@@ -1,61 +1,92 @@
-## Running the mapping 
-- You first need to make sure that your phone **SLAM** is stable enough to send proper datas to the server.
-- Then when you start mapping a place you need to make sure that you walk **at a normal pace**.
+## Basic theory
+Unlike previous versions, our mapping strategy is focused on collecting good quality data rather than a maximum of data. So the most important mapping instructions are:
+* Avoid blurry pictures, make sure your camera (or mapping device such as drone, smart glasses, etc) correctly focuses.
+* Walk slowly and avoid sharp turns to ensure that there are enough similarities between two frames 
 
-## How to map
+## Step by step explanations based on the Stardust World Scale AR app
+The demo apps are available on [__iOS App store__](https://apps.apple.com/us/app/stardust-world-scale-ar/id1551574766#?platform=iphone) and [__Android Play store__](https://play.google.com/store/apps/details?id=com.neogoma.stardust&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1). For Chinese users, please contact us directly if you need an APK. 
 
-### Quick explaination of the process
-1. __Start your mapping__ via UI or [programatically](comp_map_data_uploader.md#startstop-uploading-datas)
-2. __Collect the datas__ by walking around (make sure you consider the __uploaded datas__ and not the locally captured data). You can create objects along your mapping to create "reference positions".
-3. __Train your map__ once you have enough datas **uploaded** via UI or [programatically](comp_map_data_uploader.md#run-generation-new-map)
-4. [__Relocate__](#how-to-relocate) after receiving the notification, eventually update the map
-5. [__Update__ (Optional)](update_instructions.md) via UI or [programatically](comp_map_data_uploader.md#run-update-existing-map)
+Login into the app with your Stardust account. Open the scene “create new map” and input a map name. We’ll automatically assign a name if you lack inspiration. We’ve noticed it’s best to name the map after the place you’re mapping, it will avoid confusion. 
 
-### Detailed explainations based on the Stardust World Scale AR app
-First start on the data capture, from there it will start regularly capturing the frames.
+![Picture taken](_img/map_name.png)
 
-If you use the mapper you will notice on the top that you have 2 numbers:
+You will then land on the data capture scene, where the origin should be where you stand. The origin is represented by X,Y,Z axis in blue, green and red. If you don’t see them, you should close the app and start over to recalibrate your phone, which probably lost tracking during a previous session. This origin is important as it will help you to evaluate the accuracy of the relocation. 
+
+![Picture taken](_img/map_relocate.png)
+
+By clicking on the camera icon on the bottom right side of your screen, you will start mapping, which is another word to say regularly capturing the frames. The frames will be captured when we detect you moved in a significant way rather than at regular intervals. The current version is set to detect a movement of XXXcm or YYY degrees. Each frame taken will also trigger a photo capture animation on the camera icon and 2 numbers will start counting:
+
 ![Picture taken](_img/pic_upload.png)
-* Pictures taken: represents the frames taken on your phone. They __*DO NOT*__ represent the final status of your map
-* Pictures uploaded: represents the frame sucessfully sent to server. __All these pictures will be part of the training.__
 
-Once you start mapping your data are uploaded on the server by batch of 5. The datas are around 6 mb each so if you are using mobile data, __make sure you have enough data in your plan__.
+* Pictures in queue: this number represents every frame taken on your phone. They __DO NOT__ represent the final status of your map, but are an indication of how many frames you can still take until you’ll reach your tier limit.
+* Pictures uploaded: represents the __frame successfully sent to the servers.__ We’re sending them by batch of 5 to servers in Singapore, so it might take a while. Bear with us, we’ll scale that for V1.0. Data are around 6 Mb each so if you are using mobile data, __make sure you have enough data in your plan.__
 
 __You don't have to fill in all your picture quota to train the map (remember to keep some for the [update](update_instructions.md)).__
 
 Once you think you uploaded enough pictures for your space (try to cover as much area as necessary), you can click on the __TRAIN__ button.
 
-If you didn't fully fill in your quota you can [update](update_instructions.md) your map later.
+If you didn't fully fill in your quota you can [__update__](update_instructions.md) your map later.
 
-## How does it work
-Unlike previous versions our mapping strategy is focused on collecting good quality data rather than a maximum of datas.
-As a result the frames will be captured when we detect you moved in a significant way rather than at regular intervals.
+## Adding objects while mapping
+There are 2 ways to anchor 3D objects in your space: with the app while mapping or from the [__editor__](editor_commands.md). Creating objects while mapping is not only a good way to evaluate the accuracy of the relocation, but also to give you reference points for further creation. Just click on the + button to drop objects to your space. You can upload more objects from your dashboard, we are currently supporting .obj file and unity bundles.
 
-## How to relocate
-Go to a place or near a place that you __already mapped__ then try to relocate there.
+![Picture taken](_img/map_object.png)
 
-Make sure you __stand still__ when launching the relocation in order to avoid frame blurriness.
+## Adding navigation targets while mapping
+Similar to objects creation, the app allows you to add destination targets while mapping. You need to name the targets first and click on + to add them in your space. After relocating, you will be able to navigate to each target independently.
 
-**How do I know if I relocated properly ?**
+![Picture taken](_img/map_navigate.png)
 
-In the Stardust World Scale AR demo app, we show a 3D model that tells you where you started mapping.
-If you created objects, after relocation they should be close to where you put them.
+## Where and what to map
+__There is no physical limits to spaces you can map, but a couple of guidelines to keep in mind:__
 
-## Examples
+* Similar to the way human eyes work, a camera can’t map or recognize a completely dark space
+* Reflective surfaces will create different visual features based on your current viewpoint, which might not be correctly interpreted by our models
+* Spaces with limited visual features such as a white wall or a hotel corridor with 200 similar doors will create issues. Again here, the human eye wouldn’t be able to know exactly where it is, computer vision works the same way. 
+* Crowed places are not an issue but will require multiple updates. Similarly, objects that will frequently move, such as chairs, can be included in a bigger map that has at 4-5 updates. Even works with changing screens that are part of a bigger map.
+
+
+The following drawing should cover most places you might be mapping. In this example, we’ve created a big map first, but you can decide to map smaller distinctive spaces and stitch them together later. The mapping technique is always the same, regardless of indoor and outdoor spaces.
+
+While mapping and updating the map, what you’re trying to achieve is to **cover as many viewpoints as possible,** so that end-users will able to relocate with a high probability and accuracy. Remember, the more viewpoints the better accuracy and successful ratio!
+
+As you can see below, the **first mapping in dark grey** was done to cover the main path. Along that path, multiple updates (different green colours) were added to include specific areas, **covering as many viewpoints as possible.** Our current model can estimate a relocation pose request up to 30° different from the dataset. Above that, the only solution to guarantee a successful relocation is a map update. 
+
+![Picture taken](_img/map_illustrate.jpg)
+
+Warning: if you pause your mapping, remember to start over where you took the last frame! If there is no overlap between 2 frames, both relocation and SFM algorithms won’t be able to work.
+
+## Mapping Examples
 ### Good mapping example
-The following video is a simple example of **GOOD MAPPING**.
+The following video is a simple example of **GOOD MAPPING.**
 
 [Good mapping](_videos/good_mapping.mp4  ':include :type=video')
 
-The user walk slowly and turns the camera slowly during rotations. 
+The user walks slowly and turns the camera slowly during rotations.
 
 ### Bad mapping example
-The following video is a simple example of **BAD MAPPING**
+The following video is a simple example of **BAD MAPPING.**
 
+[Bad mapping](_videos/bad_mapping.mp4 ':include :type=video')
 
 **What is wrong ?**
 1. The user turned the camera fast so some frames will be low quality
 2. The user was running while mapping which made frame inconsistent in quality
-3. Because of the fast movements, maybe the SLAM datas of the phones are also
+3. Because of the fast movements, maybe the SLAM data of the phones are also
 
-[Bad mapping](_videos/bad_mapping.mp4 ':include :type=video')
+
+## HOW TO RELOCATE
+Go to a place or near a place that you already mapped then try to relocate there.
+Make sure you stand still when launching the relocation in order to avoid frame blurriness.
+
+**How do I know if I relocated properly ?**
+
+In the Stardust World Scale AR demo app, we show a 3D avatar that tells you where you started mapping. If you created objects, after relocation they should be close to where you put them. Look for that guy!
+
+![Picture taken](_img/map_relocateSuccess.png)
+
+Likely reasons you’ll have a FAILED relocation:
+* Blurry pictures while mapping or relocating
+* No enough frames uploaded while mapping
+* Too few updates
+* Trying to relocate in a place that has not been mapped 

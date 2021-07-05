@@ -2,7 +2,7 @@
   * [Quick start](quickstart.md)
   * [Upgrade guide](upgrade_guide.md)
 
-* Detailed instructions
+* [Detailed instructions](detailed_instruction.md) 
   * [Mapping instructions](mapping_instructions.md)
   * [Update instructions](update_instructions.md)
 
