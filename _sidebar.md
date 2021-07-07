@@ -12,16 +12,18 @@
   * Editor
     * [Basic commands](editor_commands.md)
     * [Uploading my objects](my_objects.md) 
-    * [Setup navigation](navigation.md) 
+    * [Setup navigation](navigation.md)     
 
 * Developer 
   * Classes overview
-    * [Session controller](comp_session_controller.md)
-    * [Data uploader](comp_map_data_uploader.md)
-    * [Map relocation manager](comp_map_relocation_manager.md)
-    * [Object controller](comp_object_controller.md)
+    * [Session controller](developer/comp_session_controller.md)
+    * [Data uploader](developer/comp_map_data_uploader.md)
+    * [Map relocation manager](developer/comp_map_relocation_manager.md)
+    * [Object controller](developer/comp_object_controller.md)
 
-
+  * Guide
+    * [Create a new scene for relocation](developer/guide_new_scene.md)
+    * [Create a new scene for relocation](developer/guide_no_cloud_edition.md)
 
   
 * [SDK update log](update.md)
