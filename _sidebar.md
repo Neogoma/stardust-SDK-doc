@@ -22,8 +22,8 @@
     * [Object controller](developer/comp_object_controller.md)
 
   * Guide
-    * [Create a new scene for relocation](developer/guide_new_scene.md)
-    * [Create a new scene for relocation](developer/guide_no_cloud_edition.md)
+    * [New project](developer/guide_new_scene.md)
+    * [Create scene without cloud edition](developer/guide_no_cloud_edition.md)
 
   
 * [SDK update log](update.md)
