@@ -20,6 +20,10 @@ public void Start(){
     
     //This event will be called if you reach your data limit
     dataUploader.datalimitReached.AddListener(OnDataLimitReached);
+
+    //This event will be called when the data progresses further
+    dataUploader.onRequestProgress.AddListener(OnDataUploadProgress);
+
 }
 
 
@@ -36,6 +40,11 @@ private void OnDataSentSuccess(int uploadCount)
 private void OnDataLimitReached()
 {
     Debug.Log("Maximum pictures for map reached");
+}
+
+private void OnDataUploadProgress(float uploadProgress)
+{
+    Debug.Log("Current upload progress" + uploadProgress);
 }
 ```
 
