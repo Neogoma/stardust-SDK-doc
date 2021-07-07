@@ -1,1 +1,0 @@
-# Creating a scene for relocation

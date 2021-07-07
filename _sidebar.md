@@ -17,6 +17,10 @@
     * [Map relocation manager](developer/comp_map_relocation_manager.md)
     * [Object controller](developer/comp_object_controller.md)
   
+* Developer: tutorials
+  * Simple relocation scene
+  * [1. Setup an empty project](developer/0_1_empty_project.md)
+  * [2. Setup UI script](developer/0_2_ui_script.md)
 * [SDK update log](update.md)
 * Links
   
