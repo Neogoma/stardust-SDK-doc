@@ -19,6 +19,7 @@
   * **Tutorial: simple relocation**
   * [1. Setup an empty project](developer/0_1_empty_project.md)
   * [2. Setup UI script](developer/0_2_ui_script.md)
+  * [3. UI elements and linking](developer/0_3_setup_calls.md)
   * **Classes overview**
   * [Session controller](developer/comp_session_controller.md)
   * [Data uploader](developer/comp_map_data_uploader.md)

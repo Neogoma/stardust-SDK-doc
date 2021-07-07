@@ -2,6 +2,7 @@
 
 Now that the project is setup we just have to write one class to manage all the data initialization for the map.
 
+
 1. Create a new script called **Relocation Example** 
 
 2. Now delete the ```void Update()``` method and the attribute ```public string id;``` your class should now look like this
