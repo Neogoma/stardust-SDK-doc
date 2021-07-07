@@ -20,11 +20,6 @@
     * [Data uploader](developer/comp_map_data_uploader.md)
     * [Map relocation manager](developer/comp_map_relocation_manager.md)
     * [Object controller](developer/comp_object_controller.md)
-
-  * Guide
-    * [New project](developer/guide_new_scene.md)
-    * [Create scene without cloud edition](developer/guide_no_cloud_edition.md)
-
   
 * [SDK update log](update.md)
 * Links
