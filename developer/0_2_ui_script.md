@@ -65,6 +65,7 @@ public class RelocationExample : MonoBehaviour
 ```
 
 6. Now we just have to request the map on start using the id with a call from ```MapRelocationManager.Instance.GetDataForMap``` (for more details check the [class overview](developer/comp_map_relocation_manager.md)). Your class will now look like this:
+
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
