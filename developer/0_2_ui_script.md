@@ -1,42 +1,10 @@
-# Setting up the script to run the relocation
+# Setting up the script to interact with the UI
 
-1. Create a new script called **Relocation Example** it should look like this
+Now that the project is setup we just have to write one class to manage all the data initialization for the map.
 
-```cs
-using UnityEngine;
-
-public class RelocationExample : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-```
+1. Create a new script called **Relocation Example** 
 
 2. Now delete the ```void Update()``` method and the attribute ```public string id;``` your class should now look like this
-
-```cs
-using UnityEngine;
-
-public class RelocationExample : MonoBehaviour
-{
-    public string id;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-}
-```
 
 3. Create a method ```private void MapDownloaded(Session session, GameObject map)``` that will be called once the SDK finishes downloading the map from the server. Leave it empty for now 
 
@@ -96,7 +64,7 @@ public class RelocationExample : MonoBehaviour
 }
 ```
 
-6. Now we just have to request the map on start using the id. Your class will now look like this:
+6. Now we just have to request the map on start using the id with a call from ```MapRelocationManager.Instance.GetDataForMap``` (for more details check the [class overview](developer/comp_map_relocation_manager.md)). Your class will now look like this:
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
