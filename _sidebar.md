@@ -2,23 +2,27 @@
   * [Quick start](quickstart.md)
   * [Upgrade guide](upgrade_guide.md)
 
-* Detailed instructions
-  * [Quick explaination of the process](detailed_instruction.md)
-  * [Mapping instructions](mapping_instructions.md)
-  * [How to relocate](how_relocate.md)
-  * [Update your maps](update_instructions.md)
+* User Manual
+  * Detailed instructions
+    * [Quick explaination of the process](detailed_instruction.md)
+    * [Mapping instructions](mapping_instructions.md)
+    * [How to relocate](how_relocate.md)
+    * [Update your maps](update_instructions.md)
 
-* Classes overview
-  * [Session controller](comp_session_controller.md)
-  * [Data uploader](comp_map_data_uploader.md)
-  * [Map relocation manager](comp_map_relocation_manager.md)
-  * [Object controller](comp_object_controller.md)
+  * Editor
+    * [Basic commands](editor_commands.md)
+    * [Uploading my objects](my_objects.md) 
+    * [Setup navigation](navigation.md) 
+
+* Developer 
+  * Classes overview
+    * [Session controller](comp_session_controller.md)
+    * [Data uploader](comp_map_data_uploader.md)
+    * [Map relocation manager](comp_map_relocation_manager.md)
+    * [Object controller](comp_object_controller.md)
 
 
-* Editor
-  * [Basic commands](editor_commands.md)
-  * [Uploading my objects](my_objects.md) 
-  * [Setup navigation](navigation.md) 
+
   
 * [SDK update log](update.md)
 * Links
