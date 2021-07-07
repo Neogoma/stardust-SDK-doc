@@ -2,9 +2,8 @@
 
 The Stardust SDK is Neogoma's solution for visual positioning indoors and outdoors.
 
-This [repo](https://github.com/Neogoma/stardust-SDK) is an example on how to use the Stardust SDK for Mapping/Relocation.
+We have a [repository](https://github.com/Neogoma/stardust-SDK) that you can use as an example on how to use the Stardust SDK for Mapping/Relocation.
 
-Feel free to use it as a template for your own projects, documentation is available [here](https://neogoma.github.io/stardust-SDK/).
 
 A video showing the SDK capabilities is available on [our youtube channel](https://www.youtube.com/watch?v=_zwqa6DMVCQ&feature=emb_logo).
 
