@@ -64,6 +64,24 @@ The following video is a simple example of **GOOD MAPPING.**
 
 The user walks slowly and turns the camera slowly during rotations.
 
+### Small room
+![Picture taken](_img/smallroom.png)
+
+### Big room
+![Picture taken](_img/bigroom.png)
+
+### Outdoor street
+![Picture taken](_img/street.png)
+
+### Outdoor open area
+![Picture taken](_img/openarea.png)
+
+### Specific point 
+![Picture taken](_img/point.png)
+
+### Facing wall
+![Picture taken](_img/wall.png)
+
 ### Bad mapping example
 The following video is a simple example of **BAD MAPPING.**
 
@@ -74,4 +92,3 @@ The following video is a simple example of **BAD MAPPING.**
 1. The user turned the camera fast so some frames will be low quality
 2. The user was running while mapping which made frame inconsistent in quality
 3. Because of the fast movements, maybe the SLAM data of the phones are also
-
