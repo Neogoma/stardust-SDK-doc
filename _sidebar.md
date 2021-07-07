@@ -3,13 +3,15 @@
   * [Upgrade guide](upgrade_guide.md)
 
 * __User manual__
+  * **Instructions for correct mapping and relocation**
   * [Quick explaination of the process](detailed_instruction.md)
   * [Mapping instructions](mapping_instructions.md)
   * [How to relocate](how_relocate.md)
   * [Update your maps](update_instructions.md)
-  * [Editor: Basic commands](editor_commands.md)
-  * [Editor: Uploading my objects](my_objects.md) 
-  * [Editor: Setup navigation](navigation.md)     
+  * **Editor functions**
+  * [Basic commands](editor_commands.md)
+  * [Uploading my objects](my_objects.md) 
+  * [Setup navigation](navigation.md)     
 
 
   
