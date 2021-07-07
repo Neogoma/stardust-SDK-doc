@@ -2,20 +2,16 @@
   * [Quick start](quickstart.md)
   * [Upgrade guide](upgrade_guide.md)
 
-* User Manual
-  * Detailed instructions
-    * [Quick explaination of the process](detailed_instruction.md)
-    * [Mapping instructions](mapping_instructions.md)
-    * [How to relocate](how_relocate.md)
-    * [Update your maps](update_instructions.md)
+* User manual  
+  * [Quick explaination of the process](detailed_instruction.md)
+  * [Mapping instructions](mapping_instructions.md)
+  * [How to relocate](how_relocate.md)
+  * [Update your maps](update_instructions.md)
+  * [Editor: Basic commands](editor_commands.md)
+  * [Editor: Uploading my objects](my_objects.md) 
+  * [Editor: Setup navigation](navigation.md)     
 
-  * Editor
-    * [Basic commands](editor_commands.md)
-    * [Uploading my objects](my_objects.md) 
-    * [Setup navigation](navigation.md)     
-
-* Developer 
-  * Classes overview
+* Developer: classes overview
     * [Session controller](developer/comp_session_controller.md)
     * [Data uploader](developer/comp_map_data_uploader.md)
     * [Map relocation manager](developer/comp_map_relocation_manager.md)
