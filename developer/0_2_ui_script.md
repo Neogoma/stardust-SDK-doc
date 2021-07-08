@@ -1,6 +1,6 @@
 # Setting up the script to interact with the UI
 
-Now that the project is setup we just have to write one class to manage all the data initialization for the map. We will start connecting our script with the [MapRelocationManager](comp_map_relocation_manager.md). 
+Now that the project is setup we just have to write one class to manage all the data initialization for the map. We will start connecting our script with the [MapRelocationManager](developer/comp_map_relocation_manager.md). 
 
 ## Initialize the script
 
