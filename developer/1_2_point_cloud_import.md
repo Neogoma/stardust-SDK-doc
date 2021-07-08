@@ -32,5 +32,21 @@ Now that we can see the point cloud we can create the virtual content
 
 ![Creating object at root](img/no_editor/content_inspector.png)
 
+3. Put whatever you want inside the __Content__ parent (do not move/rotate the point cloud nor the __Content__ parent)
+
+![Adding content hierarchy](img/no_editor/adding_content_hierarchy.png) ![Adding content scene](img/no_editor/adding_content_scene.png) 
+
+4. Save the __Content__ parent as a prefab
+
+5. Remove (or disable) both the point cloud and the __Content__ object in YOUR scene
+
+6. Select the **StardustComponents** in the scene that you want to relocate and look for the **MapRelocationManager** component and assign your __Content__ in the __Content Prefab__ field.
+
+![Content assigned](img/no_editor/content_assigned.png)
 
 
+## Build and run
+
+Voila! Now whenever you relocate the content will be positioned based on the relocation results ! 
+
+If you don't want to keep loading the point cloud from the server everytime, you can download the .ply file directly from the editor but you will need to find a way to import PLY files in unity!

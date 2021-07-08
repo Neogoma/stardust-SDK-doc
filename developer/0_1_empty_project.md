@@ -2,13 +2,13 @@
 
 In this page we are going to cover how to setup a scene for relocation. The steps are valid from a simple scene or a more complex one.
 
+The final result of this tutorial is available on [Github](https://github.com/Neogoma/tutorial-simple-relocation).
+
+## Prerequisite 
+
+We assume that you already created and trained a map. If you don't have a map yet, you can follow this [quick guide](quick_guide.md) to create one. 
+
 If your project already is setup with ARFoundation, you directly go to [this section](#setup-stardust-sdk-in-your-scene).
-
-This project assumes that you already already created a map.
-
-In order to create a map, you can download Stardust World Scale AR on the stores([__iOS App store__](https://apps.apple.com/us/app/stardust-world-scale-ar/id1551574766#?platform=iphone) or [__Android Play store__](https://play.google.com/store/apps/details?id=com.neogoma.stardust&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)) and follow the [mapping instructions](quick_instruction.md).
-
-The final result of this tutorial is available on [Github](https://github.com/Neogoma/simple-relocation-example).
 
 ## Setup AR foundation in your scene
 
