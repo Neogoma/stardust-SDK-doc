@@ -20,6 +20,9 @@
   * [1. Setup an empty project](developer/0_1_empty_project.md)
   * [2. Setup UI script](developer/0_2_ui_script.md)
   * [3. Setup the scene](developer/0_3_setup_calls.md)
+  * **Tutorial: creating content without editor (0.6)**
+  * [1. Setup an empty project](developer/1_1_setup_project.md)
+  * [2. Import the point cloud](developer/1_2_point_cloud_import.md)
   * **Classes overview**
   * [Session controller](developer/comp_session_controller.md)
   * [Data uploader](developer/comp_map_data_uploader.md)
