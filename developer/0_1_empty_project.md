@@ -2,7 +2,9 @@
 
 In this page we are going to cover how to setup a scene for relocation. The steps are valid from a simple scene or a more complex one.
 
-If your project already is setup with ARFoundation, you directly go to [this section](#setup-stardust-sdk-in-your-scene)
+If your project already is setup with ARFoundation, you directly go to [this section](#setup-stardust-sdk-in-your-scene).
+
+The final result of this tutorial is available on [Github](https://github.com/Neogoma/simple-relocation-example).
 
 ## Setup AR foundation in your scene
 

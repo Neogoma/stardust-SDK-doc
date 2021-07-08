@@ -1,15 +1,43 @@
 # Setting up the script to interact with the UI
 
-Now that the project is setup we just have to write one class to manage all the data initialization for the map.
+Now that the project is setup we just have to write one class to manage all the data initialization for the map. We will start connecting our script with the [MapRelocationManager](comp_map_relocation_manager.md). 
 
+## Initialize the script
 
-1. Create a new script called **Relocation Example** 
+First we need to prepare the script that will initialize the relocation manager.
+
+1. Create a new script called **RelocationExample** 
 
 2. Now delete the ```void Update()``` method and the attribute ```public string id;``` your class should now look like this
 
-3. Create a method ```private void MapDownloaded(Session session, GameObject map)``` that will be called once the SDK finishes downloading the map from the server. Leave it empty for now 
+3. Create a method ```private void MapDownloaded(Session session, GameObject map)```. It will be called once the SDK finishes downloading the map from the server. Leave it empty for now.
 
-4. Set the ```private void MapDownloaded()``` function as a listener of **MapRelocationManager.onMapDownloadedSucessfully** in the ```void Start()``` function. Now your class should look like that
+```cs
+using com.Neogoma.Stardust.API.Relocation;
+using com.Neogoma.Stardust.Datamodel;
+using UnityEngine;
+
+
+public class RelocationExample : MonoBehaviour
+{
+    public string id;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+       
+    }
+
+    private void MapDownloaded(Session session, GameObject map)
+    {
+        
+    }
+}
+```
+
+## Listen to MapRelocationManager
+
+1. Set the ```private void MapDownloaded()``` function as a listener of **MapRelocationManager.onMapDownloadedSucessfully** in the ```void Start()``` function. Now your class should look like that
 
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
@@ -34,7 +62,7 @@ public class RelocationExample : MonoBehaviour
 }
 ```
 
-5. Now keep in mind that you should **NOT RELOCATE BEFORE A MAP HAS BEEN DOWNLOADED**. This is why we listen to the **MapRelocationManager.onMapDownloadedSucessfully** event. Now you can add an button ```public GameObject locateButton;``` attribute and enable it when map has been downloaded!
+2. Now keep in mind that you should **NOT RELOCATE BEFORE A MAP HAS BEEN DOWNLOADED**. This is why we listen to the **MapRelocationManager.onMapDownloadedSucessfully** event. Now you can add an button ```public GameObject locateButton;``` attribute and enable it when map has been downloaded!
 
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
@@ -65,7 +93,9 @@ public class RelocationExample : MonoBehaviour
 }
 ```
 
-6. Now we just have to request the map on start using the id with a call from ```MapRelocationManager.Instance.GetDataForMap``` (for more details check the [class overview](developer/comp_map_relocation_manager.md)). Your class will now look like this:
+## Request the map download
+
+Now we just have to request the map on start using the id with a call from ```MapRelocationManager.Instance.GetDataForMap``` (for more details check the [class overview](developer/comp_map_relocation_manager.md)). Your class will now look like this:
 
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
