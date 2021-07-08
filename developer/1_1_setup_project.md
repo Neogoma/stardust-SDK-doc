@@ -13,7 +13,7 @@ In this page we are going to cover how to create a scene locally **WITHOUT** usi
 
 ## Install the editor coroutine in your project
 
-The same way you installed AR Foundation, install the Editor Coroutines package in your project via the package manager.
+The same way you installed AR Foundation, install the **Editor Coroutines** package in your project via the package manager.
 
 ![Editor coroutine](img/no_editor/editor_coroutine.png)
 

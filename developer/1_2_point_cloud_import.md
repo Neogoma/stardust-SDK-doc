@@ -1,6 +1,6 @@
 # Importing the point cloud and create your content
 
-In this page we are going to cover how to create your own content locally without using the editor.
+In this page we are going to cover how to create your own content locally without using the Stardust web editor.
 
 ## Import the point cloud
 
@@ -32,7 +32,7 @@ Now that we can see the point cloud we can create the virtual content
 
 ![Creating object at root](img/no_editor/content_inspector.png)
 
-3. Put whatever you want inside the __Content__ parent (do not move/rotate the point cloud nor the __Content__ parent)
+3. Put whatever you want inside the __Content__ parent (**DO NOT MOVE/ROTATE** the point cloud nor the __Content__ parent)
 
 ![Adding content hierarchy](img/no_editor/adding_content_hierarchy.png) ![Adding content scene](img/no_editor/adding_content_scene.png) 
 
