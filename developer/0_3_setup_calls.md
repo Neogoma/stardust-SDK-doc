@@ -33,3 +33,6 @@ Your button inspector should look like this
 
 That's it! You can now build and run your map and you just have to follow the [how to relocate](how_relocate) guide. You can now easily adapt this tutorial to your own project! Note that you can do all the steps programatically if you don't want to have a button for the relocation function.
 
+For better user experience here are some suggestions:
+* Listen to more [events](comp_map_relocation_manager#events)) to be able to tell the user what's going on (relocation suceeded/failed).
+* You can hide the button after requesting a relocation and show it again after getting the relocation results in order to limit the request rate.

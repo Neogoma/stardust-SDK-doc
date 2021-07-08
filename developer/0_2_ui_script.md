@@ -129,6 +129,11 @@ public class RelocationExample : MonoBehaviour
 }
 ```
 
+What will happen ?
+* The script will download the map on start (you can edit the map directly on the dashboard).
+* Once the map is downloaded it will activate the __locate__ button to allow the user to relocate.
+
+Now it's time to put everyting together!
 
 
 

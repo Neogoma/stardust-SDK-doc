@@ -4,8 +4,8 @@
 
 * __User manual__
   * **Instructions for correct mapping and relocation**
-  * [Quick explaination of the process](detailed_instruction.md)
-  * [Mapping instructions](mapping_instructions.md)
+  * [Quick explaination of the process](quick_instruction.md)
+  * [Detailed mapping instructions](mapping_instructions.md)
   * [How to relocate](how_relocate.md)
   * [Update your maps](update_instructions.md)
   * **Editor functions**
