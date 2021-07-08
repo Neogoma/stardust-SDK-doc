@@ -67,19 +67,19 @@ The user walks slowly and turns the camera slowly during rotations.
 ### Small room
 ![Picture taken](_img/smallroom.png)
 
-### Big room
+### Big or multiple rooms
 ![Picture taken](_img/bigroom.png)
 
-### Outdoor street
+### Streets and outdoor spaces
 ![Picture taken](_img/street.png)
 
-### Outdoor open area
+### Large indoor & outdoor open areas
 ![Picture taken](_img/openarea.png)
 
-### Specific point 
+### Specific point of interest
 ![Picture taken](_img/point.png)
 
-### Facing wall
+### Walls and flat surfaces
 ![Picture taken](_img/wall.png)
 
 ### Bad mapping example
