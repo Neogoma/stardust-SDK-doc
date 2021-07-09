@@ -43,3 +43,7 @@ While you can setup some scripts on your bundles there are some constrained that
 - Some scripts require the same component so test your bundle project carefully before upload.
 - If you haev sound and textures, compress them as much as possible to avoid long download times for the other users.
 - Shaders and textures can be exported without the need to be on the Stardust project.
+
+## Local content
+
+If you don't want to use the cloud solution and make your objects locally, please follow [this tutorial](developer/1_1_setup_project.md).
