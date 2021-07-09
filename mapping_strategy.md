@@ -19,7 +19,7 @@ Warning: if you pause your mapping, remember to start over where you took the la
 
 ## How to get a good coverage
 
-The following pictures explain how to get
+Here's a table explaining how to properly map different spaces.
 
 | Type of space | Coverage picture |
 |:-:|:-:|
