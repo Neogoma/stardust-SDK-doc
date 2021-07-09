@@ -1,18 +1,16 @@
 # Editor commands
 ## Camera movement
-### Moving around
-* W/Up: Forward
-* S/Down: Backward
-* A/Left: Left
-* D/Right: Right
-* Q: Move up
-* E: Move down
 
-### Rotating camera
-Maintain ALT and move the mouse to turn the camera around.
-
-### Pan the camera 
-Middle click + moving the mouse to move the camera in the world
+| Action | Command |
+|:-:|:-:|
+| **Forward** | Up key/ W |
+| **Backward**  | Down key/S  |
+|  **Left** | Left key/A  |
+|  **Right** | Right key/D  |
+|  **Move up** | Q |
+|  **Move down** | E |
+|  **Rotate camera** | ALT + mouse move |
+|  **Pan camera** | Middle click + mouse move |
 
 ## Objects
 ### Creating object

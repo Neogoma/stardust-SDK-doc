@@ -1,8 +1,3 @@
-## Basic theory
-Unlike previous versions, our mapping strategy is focused on collecting good quality data rather than a maximum of data. So the most important mapping instructions are:
-* Avoid blurry pictures, make sure your camera (or mapping device such as drone, smart glasses, etc) correctly focuses.
-* Walk slowly and avoid sharp turns to ensure that there are enough similarities between two frames 
-
 ## Step by step explanations based on the Stardust World Scale AR app
 The demo apps are available on [__iOS App store__](https://apps.apple.com/us/app/stardust-world-scale-ar/id1551574766#?platform=iphone) and [__Android Play store__](https://play.google.com/store/apps/details?id=com.neogoma.stardust&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1). For Chinese users, please contact us directly if you need an APK. 
 
