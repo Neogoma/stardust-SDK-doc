@@ -6,7 +6,7 @@ The final result of this tutorial is available on [Github](https://github.com/Ne
 
 ## Prerequisite 
 
-We assume that you already created and trained a map. If you don't have a map yet, you can follow this [quick guide](quick_guide.md) to create one. 
+We assume that you already created and trained a map. If you don't have a map yet, you can follow this [quick guide](quick_instruction.md) to create one. 
 
 If your project already is setup with ARFoundation, you directly go to [this section](#setup-stardust-sdk-in-your-scene).
 
