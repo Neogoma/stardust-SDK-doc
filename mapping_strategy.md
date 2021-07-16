@@ -35,23 +35,8 @@ Here's a table explaining how to properly map different spaces. The red icon sho
 |  **Point of interest** | ![Picture taken](_img/point.png) |
 
 
-## Mapping Examples
+## Video
 
-### Good mapping example
-The following video is a simple example of **GOOD MAPPING.**
+A quick video to explain the common mapping mistakes is available here.
 
-[Good mapping](_videos/good_mapping.mp4  ':include :type=video')
-
-The user walks slowly and turns the camera slowly during rotations.
-
-
-### Bad mapping example
-The following video is a simple example of **BAD MAPPING.**
-
-[Bad mapping](_videos/bad_mapping.mp4 ':include :type=video')
-
-### What is wrong ?
-
-1. The user turned the camera fast so some frames will be low quality
-2. The user was running while mapping which made frame inconsistent in quality
-3. Because of the fast movements, maybe the SLAM data of the phones are also
+[![Do n don't](https://img.youtube.com/vi/ZO04ZSZ4mbk/0.jpg)](https://www.youtube.com/watch?v=ZO04ZSZ4mbk)
