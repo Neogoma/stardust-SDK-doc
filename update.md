@@ -1,8 +1,13 @@
 # Update log
+## 0.6
+* **SDK**
+    * Updating the data capture paramether
+    * Editor tools to work on a local scene without online editor
 
 ## 0.56 
 * **SDK**
     * Updating the data capture parameters
+    * Devs can now check how many pictures are queued
 
 ## 0.55 "Hawkeye"
 * **SDK**
