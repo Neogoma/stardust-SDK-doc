@@ -6,6 +6,6 @@ Remember, updating a map has 2 objectives:
 * Covering areas that have not been mapped, with **as many viewpoints as possible**
 * Feeding the ML model with more data from a mapped space, **anticipating changes in the physical environment.** 
 
-Lastly, remember to click TRAIN when you are done with a map update, otherwise the model won’t take into account your updates!
+Lastly, remember to click TRAIN when you are done with a map update If you don't the model won’t take into account your updates!
 
 ![Picture taken](_img/update.png)
