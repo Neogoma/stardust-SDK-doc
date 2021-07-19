@@ -13,8 +13,8 @@ By clicking on the camera icon on the bottom right side of your screen, you will
 
 ![Picture taken](_img/pic_upload.png)
 
-* Pictures in queue: this number represents every frame taken on your phone. They __DO NOT__ represent the final status of your map, but are an indication of how many frames you can still take until you’ll reach your tier limit.
-* Pictures uploaded: represents the __frame successfully sent to the servers.__ We’re sending them by batch of 5 to servers in Singapore, so it might take a while. Bear with us, we’ll scale that for V1.0. Data are around 6 Mb each so if you are using mobile data, __make sure you have enough data in your plan.__
+* Pictures in queue: this number represents every frame to be sent in the cloud. They __DO NOT__ represent the final status of your map but are an indication of how many frames you can still take until you’ll reach your tier limit.
+* Pictures uploaded: represents the __frame successfully sent to the servers.__ We’re sending them by batch of 5 to servers in Singapore (we plan to setup regional servers in the future), so it might take a while. Data are around 6 Mb each so if you are using mobile data, __make sure you have enough data in your plan.__
 
 __You don't have to fill in all your picture quota to train the map (remember to keep some for the [update](update_instructions.md)).__
 
@@ -23,7 +23,7 @@ Once you think you uploaded enough pictures for your space (try to cover as much
 If you didn't fully fill in your quota you can [__update__](update_instructions.md) your map later.
 
 ## Adding objects while mapping
-There are 2 ways to anchor 3D objects in your space: with the app while mapping or from the [__editor__](editor_commands.md). Creating objects while mapping is not only a good way to evaluate the accuracy of the relocation, but also to give you reference points for further creation. Just click on the + button to drop objects to your space. You can upload more objects from your dashboard, we are currently supporting .obj file and unity bundles.
+There are 2 ways to anchor 3D objects in your space: with the app while mapping or from the [__editor__](editor_commands.md). Creating objects while mapping is not only a good way to evaluate the accuracy of the relocation, but also to give you reference points for further creation. Just click on the + button to drop objects into your space. You can upload more objects from your dashboard, we are currently supporting .obj file and unity bundles.
 
 ![Picture taken](_img/map_object.png)
 
