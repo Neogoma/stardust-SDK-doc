@@ -14,7 +14,7 @@
 
 ## Objects
 ### Creating object
-Once you opened the editor you can create/delete/update objects. In order to create an object select the bundle you want to create in the combobox and then click on the create button.
+Once you opened the editor you can create/delete/update objects. To create an object select the bundle you want to create in the combobox and then click on the create button.
 
 ![Object creation](_img/create_object.jpg)
 
