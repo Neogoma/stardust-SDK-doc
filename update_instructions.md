@@ -8,3 +8,4 @@ Remember, updating a map has 2 objectives:
 
 Lastly, remember to click TRAIN when you are done with a map update, otherwise the model won’t take into account your updates!
 
+![Picture taken](_img/update.png)
