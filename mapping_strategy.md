@@ -4,7 +4,7 @@ Unlike previous versions, our mapping strategy is focused on collecting good qua
 * **Walk slowly and avoid sharp turns** to ensure that there are enough similarities between two different frames 
 
 ## Where and what to map
-__There is no physical limits to spaces you can map, but a couple of guidelines to keep in mind:__
+__There are no physical limits to spaces you can map, but a couple of guidelines to keep in mind:__
 
 * Similar to the way human eyes work, a camera can’t map or recognize a completely dark space
 * Reflective surfaces will create different visual features based on your current viewpoint, which might not be correctly interpreted by our models
@@ -13,13 +13,13 @@ __There is no physical limits to spaces you can map, but a couple of guidelines 
 
 The following drawing should cover most places you might be mapping. In this example, we’ve created a big map first, but you can decide to map smaller distinctive spaces and stitch them together later. The mapping technique is always the same, regardless of indoor and outdoor spaces.
 
-While mapping and updating the map, what you’re trying to achieve is to **cover as many viewpoints as possible,** so that end-users will able to relocate with a high probability and accuracy. Remember, the more viewpoints the better accuracy and successful ratio!
+While mapping and updating the map, what you’re trying to achieve is to **cover as many viewpoints as possible,** so that end-users will be able to relocate with a high probability and accuracy. Remember, the more viewpoints the better accuracy and successful ratio!
 
-As you can see below, the **first mapping in dark grey** was done to cover the main path. Along that path, multiple updates (different green colours) were added to include specific areas, **covering as many viewpoints as possible.** Our current model can estimate a relocation pose request up to 30° different from the dataset. Above that, the only solution to guarantee a successful relocation is a map update. 
+As you can see below, the **first mapping in dark grey** was done to cover the main path. Along that path, multiple updates (different green colors) were added to include specific areas, **covering as many viewpoints as possible.** Our current model can estimate a relocation pose request up to 30° different from the dataset. Above that, the only solution to guarantee a successful relocation is a map update. 
 
 ![Picture taken](_img/map_illustrate.jpg)
 
-Warning: if you pause your mapping, remember to start over where you took the last frame! If there is no overlap between 2 frames, both relocation and SFM algorithms won’t be able to work.
+**Warning**: if you pause your mapping, remember to start over where you took the last frame! If there is no overlap between 2 frames, both relocation and SFM algorithms won’t be able to work.
 
 ## How to get a good coverage
 
