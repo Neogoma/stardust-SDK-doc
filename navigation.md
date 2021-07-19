@@ -2,7 +2,7 @@
 Since version 0.2 the Stardust SDK includes a navigation component.
 
 ## Principle
-The mapping system automatically generates a navigable area based on the datas you sent. So the **more you map/update, the better your navigation will be**.
+The mapping system automatically generates a navigable area based on the data you sent. So the **more you map/update, the better your navigation will be**.
 
 Navigations targets are destinations that the user can navigate to in your map. They can be defined either in the mapper samples or in the editor.
 
@@ -89,4 +89,4 @@ This makes the map impossible to navigate (navigation can freeze), all path shou
 
 
 ### Note
-You can put a target anywhere you want but be aware that if you do not put your target on an navigable area the pathfinding algorithm can't guarantee the correct result of your navigation. If you want to make an area navigable just your map.
+You can put a target anywhere you want but be aware that if you do not put your target on a navigable area the pathfinding algorithm can't guarantee the correct result of your navigation. If you want to make an area navigable just your map.
