@@ -1,7 +1,7 @@
 ## Basic theory
 Unlike previous versions, our mapping strategy is focused on collecting good quality data rather than a maximum of data. So the most important mapping instructions are:
 * **Avoid blurry pictures**, make sure your camera (or mapping device such as drone, smart glasses, etc) correctly focuses.
-* **Walk slowly and avoid sharp turns** to ensure that there are enough similarities between two frames 
+* **Walk slowly and avoid sharp turns** to ensure that there are enough similarities between two different frames 
 
 ## Where and what to map
 __There is no physical limits to spaces you can map, but a couple of guidelines to keep in mind:__
