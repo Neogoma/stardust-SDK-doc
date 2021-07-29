@@ -14,8 +14,6 @@
   * [Uploading my objects](my_objects.md) 
   * [Setup navigation](navigation.md)     
 
-
-  
 * __Developer__
   * **Tutorial: simple relocation**
   * [1. Setup an empty project](developer/0_1_empty_project.md)
@@ -29,6 +27,9 @@
   * [Data uploader](developer/comp_map_data_uploader.md)
   * [Map relocation manager](developer/comp_map_relocation_manager.md)
   * [Object controller](developer/comp_object_controller.md)
+  * **Customized behavior**
+  * [Customized path renderer](developer/2_1_custom_navigation_path.md)
+
 
 * [SDK update log](update.md)
 * Links
