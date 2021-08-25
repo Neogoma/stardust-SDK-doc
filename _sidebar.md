@@ -30,10 +30,10 @@
   * **Customized behaviors (Advanced)**
   * [Path renderering](developer/2_1_custom_navigation_path.md)
   * **Stardust SDK for non ARCore/ARKit devices (Advanced)**
-  * [Provide device image](developer/3_1_provide_device_image.md)
-  * [Provide camera intrisics](developer/3_2_provide_image_intrisics.md)
-  * [Provide device position](developer/3_3_provide_device_position.md)
-  * [Link all providers to stardust](developer/3_4_plug_everything_together.md)
+  * [1. Device camera image](developer/3_1_provide_device_image.md)
+  * [2. Device camera intrisics](developer/3_2_provide_image_intrisics.md)
+  * [3. Device position](developer/3_3_provide_device_position.md)
+  * [4. Link all providers to stardust](developer/3_4_plug_everything_together.md)
 
 
 
