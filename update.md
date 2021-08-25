@@ -1,4 +1,34 @@
 # Update log
+
+## 0.65
+* **SDK**
+    * Reducing capture memory leaks
+    * Updating the file structure to allow customs data provider (for AR glasses)
+
+## 0.622
+* **SDK**
+    * Udpate the emergency switch rate
+    * Update the capture algorithm
+
+## 0.621
+* **SDK**
+    * Updating the delay between 2 captures
+    * Adjusting the emergency cut behavior
+
+## 0.62
+* **SDK**
+    * Solving cached point cloud issue on Unity editor
+    * Manual timeout to server call
+    * Updating the capture algorithm
+
+## 0.611
+* **SDK**
+    * Solving issue on **MapDataUploader**
+
+## 0.61
+* **SDK**
+    * Adjusting camera resolution fetching   
+    
 ## 0.6
 * **SDK**
     * Updating the data capture paramether
