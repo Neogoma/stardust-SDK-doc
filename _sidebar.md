@@ -22,18 +22,19 @@
   * **Tutorial: creating content without editor (0.6)**
   * [1. Setup an empty project](developer/1_1_setup_project.md)
   * [2. Import the point cloud](developer/1_2_point_cloud_import.md)
+  * **Tutorial: Customized behaviors (Advanced)**
+  * [Path renderering](developer/2_1_custom_navigation_path.md)
+  * **Tutorial: Non ARCore/ARKit devices (Advanced)**
+  * [1. Device camera image](developer/3_1_provide_device_image.md)
+  * [2. Device camera intrisics](developer/3_2_provide_image_intrisics.md)
+  * [3. Device position](developer/3_3_provide_device_position.md)
+  * [4. Link all providers to stardust](developer/3_4_plug_everything_together.md)
   * **Classes overview**
   * [Session controller](developer/comp_session_controller.md)
   * [Data uploader](developer/comp_map_data_uploader.md)
   * [Map relocation manager](developer/comp_map_relocation_manager.md)
   * [Object controller](developer/comp_object_controller.md)
-  * **Customized behaviors (Advanced)**
-  * [Path renderering](developer/2_1_custom_navigation_path.md)
-  * **Stardust SDK for non ARCore/ARKit devices (Advanced)**
-  * [1. Device camera image](developer/3_1_provide_device_image.md)
-  * [2. Device camera intrisics](developer/3_2_provide_image_intrisics.md)
-  * [3. Device position](developer/3_3_provide_device_position.md)
-  * [4. Link all providers to stardust](developer/3_4_plug_everything_together.md)
+  
 
 
 
