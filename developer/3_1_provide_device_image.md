@@ -5,7 +5,7 @@ If you are using a device that is not ARFoundation compatible, you can still rel
 **NOTE**: This series tutorials will NOT provide full implementation but instead will wall you trough the structures because we consider each device will have different code
 
 ## Create an event
-First of all you need to create the event to communicate the picture to the differents stardust modules. You need to create a class that will extend ```BaseInteractionEvent``` and implement ```IPictureDataReady```. This event will hold the pictures datas as a byte array (coming from the ``Texture2D.EncodeToJPG()`` function).
+First of all you need to create the event to communicate the picture to the differents stardust modules. You need to create a class that will extend ```BaseInteractionEvent``` and implement ```IPictureDataReady```. This event will hold the pictures datas as a byte array (coming from the ``Texture2D.EncodeToJPG()`` function). 
 
 ```cs
 using com.Neogoma.HoboDream;
@@ -56,7 +56,7 @@ public class CustomImageProvider : AbstractNonMonoInteractive, ICameraImageProvi
         //Update the event with the array
         picEvent.SetData(imageDatas);
 
-        //Dispatch the event
+        //Dispatch the event to all the stardust modules
         NotifyListeners(picEvent);
 
     }
