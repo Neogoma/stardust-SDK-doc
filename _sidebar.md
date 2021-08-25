@@ -27,8 +27,12 @@
   * [Data uploader](developer/comp_map_data_uploader.md)
   * [Map relocation manager](developer/comp_map_relocation_manager.md)
   * [Object controller](developer/comp_object_controller.md)
-  * **Customized behavior**
-  * [Customized path renderer](developer/2_1_custom_navigation_path.md)
+  * **Customized behaviors (Advanced)**
+  * [Path renderering](developer/2_1_custom_navigation_path.md)
+  * **Stardust SDK for non ARCore/ARKit devices (Advanced)**
+  * [Provide device image](developer/3_1_provide_device_image.md)
+  * [Provide camera intrisics](developer/2_1_custom_navigation_path.md)
+  * [Provide device position](developer/2_1_custom_navigation_path.md)
 
 
 * [SDK update log](update.md)
