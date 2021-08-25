@@ -5,7 +5,7 @@ The next step is to provide the [camera instrisics datas](https://en.wikipedia.o
 ## Overview of IntrisicsData class
 The ```IntrisicsData``` class is used to dispatch the data of the **CURRENT** image intrisics to the other stardust modules.
 
-You overall you will create the object with the following constructor:
+You will create the object with the following constructor:
 ```cs
 public IntrisicsData(float fx, float fy, float cx, float cy, float lx, float ly);
 ```
@@ -18,41 +18,12 @@ The different parameters are:
 * lx : focal lenght x
 * ly : focal lenght y
 
-**Note** You need to make SURE that the datas match your camera orientation otherwise the training AND SFM could product wrong results.
+**Note** You need to make SURE that the data match your camera orientation otherwise the training AND the point cloud generation could produce wrong results.
 
 ## Create a class to provide intrisics
 You need to create a class that will implement ```ICameraImageIntrisicsProvider```.
 
 There is only one method that will return an ```IntrisicsData``` object
-
-```cs
-using com.Neogoma.HoboDream;
-using com.Neogoma.HoboDream.Impl;
-using com.Neogoma.Stardust.API;
-
-public class PictureEvent : BaseInteractionEvent, IPictureDataReady
-{
-    private byte[] data;
-
-    public PictureEvent(IInteractiveElement source) : base(source, InteractiveEventAction.ARRIVED)
-    {
-    }
-
-    public void SetData(byte[] data)
-    {
-        this.data = data;
-    }
-
-    public byte[] GetPictureDatas()
-    {
-        return data;
-    }
-}
-```
-
-## Create a camera image provider
-
-Now we need to setup the class that will compute the image for the rest of the stardust components. You need to create a class that will extend ```AbstractNonMonoInteractive``` and implement ```ICameraImageProvider```. This class will compute the pictures datas and convert them into a byte array (coming from the ``Texture2D.EncodeToJPG()`` function) to then dispatch them to the different modules.
 
 ```cs
 using com.Neogoma.Stardust.API;
@@ -63,6 +34,7 @@ public class CustomIntrisicsProvider : ICameraImageIntrisicsProvider
     public IntrisicsData GetCameraInstrinscs()
     {
         //For the example create a dummy intrisics data with fake datas and return it
+        //Provide the datas from your device instead
         IntrisicsData datas = new IntrisicsData(0, 0, 0, 0, 0, 0);
 
         return datas;
@@ -70,4 +42,6 @@ public class CustomIntrisicsProvider : ICameraImageIntrisicsProvider
 }
 ```
 
-Now that the basic structure is set for getting the image the next step will be to get the device position !
+
+
+Now that the basic structure is set for getting the image the next step will be to get the device position!

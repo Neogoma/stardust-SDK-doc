@@ -1,11 +1,9 @@
 # Provide device intrisics
 
-Almost there! Now that instrisics and camera image are dispatched the only info we're missing is the positon!
+Almost there! Now that intrinsics and camera images are dispatched the only info we're missing is the position!
 
 ## Create a class to provide intrisics
-You need to create a class that will implement ```IDeviceLocationProvider```. Here is an example of implementation using 
-
-There is only one method that will return an ```IntrisicsData``` object
+You need to create a class that will implement ```IDeviceLocationProvider```. Here is an example of an implementation using the main camera to represent the device.
 
 ```cs
 
@@ -72,4 +70,4 @@ public class CustomPositionProvider : IDeviceLocationProvider
 
 ```
 
-Alright we're good to go! Time to plug everything together!!
+Alright, we're good to go! Time to plug everything together!
