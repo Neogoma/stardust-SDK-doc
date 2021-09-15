@@ -55,7 +55,7 @@ private void OnMaximumRequestReached()
 }
 
 ```
-## Setup the map first
+## Setup the map first (Cloud content only)
 Before calling the relocation you will need to setup the session you want to relocate in using the __GetDataForMap__ function. It will download the map data and setup the relocation manager on this session. You can use a Session instance or a UUID.
 
 ```cs
@@ -76,9 +76,17 @@ When the relocation is done it will trigger the  __mapDownloadedSucessfully__ ev
 - The gameobject that contains the map data
 
 ## Run relocation
+
+### With a cloud map
 In order to run the relocation you just have to do the following call
 ```cs
 MapRelocationManager.Instance.LocateCurrentPosition();
+```
+
+### Without a cloud map
+If you prefer to work without cloud content you can also relocate using the map UUID
+```cs
+MapRelocationManager.Instance.LocateCurrentPosition(string uuid);
 ```
 
 If the position can be found then the __positionFound__ event will be triggered otherwise __positionNotFound__ will be triggered.

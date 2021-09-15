@@ -1,4 +1,8 @@
-# Setting up the script to interact with the UI
+# Cloud content relocation
+
+If you are on this page, it means that you plan to use the editor to edit the content in your map. It also means you will have to create the [Asset bundle system](../my_objects.md) to add new objects. 
+
+The result of this tutorial is in the scene **1-Cloud Content** of the repository
 
 Now that the project is setup we just have to write one class to manage all the data initialization for the map. We will start connecting our script with the [MapRelocationManager](developer/comp_map_relocation_manager.md). 
 
@@ -44,7 +48,7 @@ using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
 using UnityEngine;
 
-public class RelocationExample : MonoBehaviour
+public class CloudContentRelocation : MonoBehaviour
 {
     public string id;
 
@@ -69,7 +73,7 @@ using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
 using UnityEngine;
 
-public class RelocationExample : MonoBehaviour
+public class CloudContentRelocation : MonoBehaviour
 {
     public string id;
 
@@ -102,7 +106,7 @@ using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
 using UnityEngine;
 
-public class RelocationExample : MonoBehaviour
+public class CloudContentRelocation : MonoBehaviour
 {
     public string id;
 
@@ -133,7 +137,40 @@ What will happen ?
 * The script will download the map on start (you can edit the map directly on the dashboard).
 * Once the map is downloaded it will activate the __locate__ button to allow the user to relocate.
 
-Now it's time to put everyting together!
+## Setup the UI
+
+Just create a button wherever you want in your scene. For this example I will create it in the middle of the screen.
+
+![Session setup](img/setup/ui_setup.png)
+
+
+## Assign your CloudContentRelocation to the ar session
+
+Add the **CloudContentRelocation** script to the **AR Session** gameobject.
+Once this is done, you can fill in the fields
+
+1. Put your button as the attribute **Locate button** 
+2. Fill in the id field with your **Map ID** of the [dashboard](https://stardust.neogoma.com/map_list)
+
+![Session setup](img/setup/cloud_session_setup.png)
+
+## Call the relocation when you click on the button
+
+Now it's time to finally assign the relocation to the button.
+
+Select your button then in the **On Click()** event, assign the **StardustComponent** and select the **MapRelocationManager.LocateCurrentPosition()** function.
+
+Your button inspector should look like this
+
+![Button inspector setup](img/setup/cloud_button_inspector.png)
+
+## Build and run
+
+That's it! You can now build and run your map and you just have to follow the [how to relocate](how_relocate) guide. You can now easily adapt this tutorial to your own project! Note that you can do all the steps programatically if you don't want to have a button for the relocation function.
+
+For better user experience here are some suggestions:
+* Listen to more [events](developer/comp_map_relocation_manager#events) to be able to tell the user what's going on (relocations results, start downloading the map...).
+* You can hide the button after requesting a relocation and show it again after getting the relocation results (otherwise the user can receive different relocation results at different times).
 
 
 

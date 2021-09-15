@@ -54,4 +54,11 @@ Download the Unity package and import it into your project via the following ste
 
 ![Token setup](img/setup/token_setup.jpg)
 
-Now that the project is setup and ready to go, let's write some code!
+## Choose your approach
+Once the project is setup, you have to choose your approach 
+
+### Use the Stardust editor (recommended for non-tech people)
+If you plan to edit your maps online and use online objects [**follow these step**](developer/0_2_cloud_content.md)
+
+### Use Unity
+If you plan to edit your maps directly in Unity [**follow these step**](developer/0_2_local_content.md)

@@ -17,13 +17,13 @@
 * __Developer__
   * **Tutorial: simple relocation**
   * [1. Setup an empty project](developer/0_1_empty_project.md)
-  * [2. Setup UI script](developer/0_2_ui_script.md)
-  * [3. Setup the scene](developer/0_3_setup_calls.md)
+  * [2. Cloud content relocation](developer/0_2_cloud_content.md)
+  * [3. Local content relocation](developer/0_2_local_content.md)  
   * **Tutorial: creating content without editor (0.6)**
   * [1. Setup an empty project](developer/1_1_setup_project.md)
   * [2. Import the point cloud](developer/1_2_point_cloud_import.md)
   * **Tutorial: Customized behaviors (Advanced)**
-  * [Path renderering](developer/2_1_custom_navigation_path.md)
+  * [Path rendering](developer/2_1_custom_navigation_path.md)
   * **Tutorial: Non ARCore/ARKit devices (Advanced)**
   * [1. Device camera image](developer/3_1_provide_device_image.md)
   * [2. Device camera intrisics](developer/3_2_provide_image_intrisics.md)
