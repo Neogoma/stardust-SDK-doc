@@ -24,6 +24,9 @@ public void Start{
 
     //Called when the position in map has not been found after relocation request
     relocationManager.onPositionNotFound.AddListener(OnPositionMatchFailed);
+
+    //Called when you reached the maximum of monthly requests
+    relocationManager.onMaxRequestReached.AddListener(OnMaximumRequestReached);
 }
 
 private void OnMapDownloaded(Session session,GameObject map)
@@ -45,6 +48,12 @@ private void OnPositionMatchFailed()
 {
     Debug.Log("Could not find position");
 }
+
+private void OnMaximumRequestReached()
+{
+    Debug.Log("Request limit reached");
+}
+
 ```
 ## Setup the map first
 Before calling the relocation you will need to setup the session you want to relocate in using the __GetDataForMap__ function. It will download the map data and setup the relocation manager on this session. You can use a Session instance or a UUID.
