@@ -1,5 +1,11 @@
 # Update log
 
+## 0.7
+* **SDK**
+    * Set up call back for maximum number of requests
+    * Allow relocation without downloading the map    
+    * URL updates
+
 ## 0.65
 * **SDK**
     * Reducing capture memory leaks
