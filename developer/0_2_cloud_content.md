@@ -6,7 +6,7 @@ The result of this tutorial is in the scene **1-Cloud Content** of the repositor
 
 Now that the project is setup we just have to write one class to manage all the data initialization for the map. We will start connecting our script with the [MapRelocationManager](developer/comp_map_relocation_manager.md). 
 
-## Initialize the script
+## Setup the script
 
 First we need to prepare the script that will initialize the relocation manager.
 
