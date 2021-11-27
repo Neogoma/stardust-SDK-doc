@@ -32,7 +32,7 @@ In order to update your sdk to a newer release version all you have to do is dow
 
 ### Downloading the latest release package
 
-- Go over to our SDK repository [releases](https://github.com/Neogoma/stardust-SDK/releases).
+- Go over to our SDK repository [releases](https://github.com/Neogoma/stardust-SDK/releases/latest).
 - Click on the latest **.unitypackage** file to download the unity package.
 
 ![releases Download](_img/releases.png)
