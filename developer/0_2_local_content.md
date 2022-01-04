@@ -36,9 +36,9 @@ Just create a button wherever you want in your scene. For this example I will cr
 
 ![Session setup](img/setup/ui_setup.png)
 
-## Assign your CloudContentRelocation to the ar session
+## Assign your LocalContentRelocation to the ar session
 
-Add the **CloudContentRelocation** script to the **AR Session** gameobject.
+Add the **LocalContentRelocation** script to the **AR Session** gameobject.
 Once this is done, fill in the id field with your **Map ID** of the [dashboard](https://stardust.neogoma.com/map_list)
 
 ![Session setup](img/setup/local_session_setup.png)
@@ -47,7 +47,7 @@ Once this is done, fill in the id field with your **Map ID** of the [dashboard](
 
 Now it's time to finally assign the relocation to the button.
 
-Select your button then in the **On Click()** event, assign the **ARSession** and select the **CloudContentRelocation.Relocate()** function.
+Select your button then in the **On Click()** event, assign the **ARSession** and select the **LocalContentRelocation.Relocate()** function.
 
 Your button inspector should look like this
 
