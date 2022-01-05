@@ -1,5 +1,27 @@
 # Update log
 
+## 0.772
+* **SDK**
+    * Updating to Hobodream 1.6
+
+## 0.771
+* **SDK**
+    * Updating the Object management method names to show the MVC structure
+    * Correcting the update coordinates after relocation
+    * Adding methods in object controller to manage the metadata
+
+## 0.77
+* **SDK**
+    * Adding metadata field in the persistent object's data.
+
+## 0.76
+* **SDK**
+    * Adding the property RelocationReliable on the relocation results to feedback user on the relocation results
+
+## 0.75
+* **SDK**
+    * Increasing relocation accuracy
+
 ## 0.7
 * **SDK**
     * Set up call back for maximum number of requests
