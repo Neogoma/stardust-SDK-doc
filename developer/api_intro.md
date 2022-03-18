@@ -8,3 +8,5 @@ The follwing headers need to be setup to authenticate your account on the reques
 | Name | Value |
 | --- | --- |
 | Authorization | "Bearer "+[API KEY] |
+
+If you don't provide the token or you try to access data that are not yours you trigger a 403 forbidden error.

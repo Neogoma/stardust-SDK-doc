@@ -61,6 +61,35 @@ Data successfully retrieved.
 ```
 <!-- tabs:end -->
 
+### GET Exists
+```
+https://stardust.neogoma.com/api/v1/map/exists/:id
+```
+
+This endpoint allows the user to know if a map exists or not.
+
+<!-- tabs:start -->
+
+#### ** Request **
+
+**Path Parameters**
+
+| Name | Type | Description | Required |
+| --- | --- | --- | --- |
+| id | string | Your map id | The ID of the Stardust map you want to get data for |
+
+#### ** Response **
+
+**200: OK**
+
+Data successfully retrieved.
+
+```
+0 if the map doesn't exist
+1 otherwise
+```
+<!-- tabs:end -->
+
 ## Others
 
 ### GET Point Cloud
