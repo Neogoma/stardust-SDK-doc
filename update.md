@@ -1,37 +1,74 @@
 # Update log
 
+## 0.902
+* **SDK**
+    * feature: URL's can now be used for displaying pictures
+* **Dashboard**
+    * feature: allowing users to choose between image URL or GLB upload
+* **API (premium feature)**
+    * feature: Create a picture via API
+
+## 0.901
+* **SDK**
+    * fix: correct the bug on different object creation
+
+## 0.9
+* **SDK**
+    * feature: Adding the scripts for offline mapping
+* **API (premium feature)**
+    * feature: Download point cloud function 
+    * feature: Get map batch data
+
+## 0.85
+* **SDK**
+    * feature: Sending necessary datas for analytics
+* **Dashboard**
+    * feature: Analytics editor for paying users
+
+## 0.81
+* **SDK**
+    * fix: object rotation on relocation
+    * fix: multiple object creations on the map download
+
+## 0.8
+* **SDK**
+    * feature: Using GLB files
+* **Dashboard**
+    * update: Updating the object upload page to manage GLB files
+    * update: Editor upgrade
+    * feature: Allow users download their failed relocations (premium feature)
+    
 ## 0.772
 * **SDK**
-    * Updating to Hobodream 1.6
+    * update: Updating to Hobodream 1.6
 
 ## 0.771
 * **SDK**
-    * Updating the Object management method names to show the MVC structure
-    * Correcting the update coordinates after relocation
-    * Adding methods in object controller to manage the metadata
+    * update: Updating the Object management method names to show the MVC structure
+    * fix: Correcting the update coordinates after relocation
+    * update: Adding methods in object controller to manage the metadata
 
 ## 0.77
 * **SDK**
-    * Adding metadata field in the persistent object's data.
+    * update: Adding metadata field in the persistent object's data.
 
 ## 0.76
 * **SDK**
-    * Adding the property RelocationReliable on the relocation results to feedback user on the relocation results
+    * update: Adding the property RelocationReliable on the relocation results to feedback user on the relocation results
 
 ## 0.75
 * **SDK**
-    * Increasing relocation accuracy
+    * update: Increasing relocation accuracy
 
 ## 0.7
 * **SDK**
-    * Set up call back for maximum number of requests
-    * Allow relocation without downloading the map    
-    * URL updates
+    * feature: Set up call back for maximum number of requests
+    * feature: Allow relocation without downloading the map    
 
 ## 0.65
 * **SDK**
-    * Reducing capture memory leaks
-    * Updating the file structure to allow customs data provider (for AR glasses)
+    * update: Reducing capture memory leaks
+    * update: Updating the file structure to allow customs data provider (for non AR foundation datas)
 
 ## 0.622
 * **SDK**
