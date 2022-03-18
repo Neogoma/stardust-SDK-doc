@@ -34,7 +34,9 @@
   * [Data uploader](developer/comp_map_data_uploader.md)
   * [Map relocation manager](developer/comp_map_relocation_manager.md)
   * [Object controller](developer/comp_object_controller.md)
-  
+  * **API**
+  * [Intro](developer/api_intro.md)
+  * [Endpoints](developer/api_endpoint.md)
 
 
 

@@ -17,6 +17,12 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --docsifytabs-border-color: #ededed;
+      --docsifytabs-tab-highlight-color: purple;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,7 +32,15 @@
       loadSidebar: true,
       subMaxLevel: 2,
       name: 'Stardust SDK',
-      repo: 'https://github.com/Neogoma/stardust-SDK'
+      repo: 'https://github.com/Neogoma/stardust-SDK',
+
+      tabs: {
+        persist: true,      // default
+        sync: true,      // default
+        theme: 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      }
     }
 
   </script>
@@ -38,7 +52,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 </body>
 
 
