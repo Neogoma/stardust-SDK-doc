@@ -1,6 +1,7 @@
 # Endpoints
 
 ## Maps
+
 ### GET Batches
 ```
 https://stardust.neogoma.com/api/v1/map/batches/:id
@@ -59,6 +60,15 @@ Data successfully retrieved.
     }
 ]
 ```
+
+**400: Bad parameters**
+
+Wrong parameters.
+
+**404: Not found**
+
+Requested ID doesn't match any map.
+
 <!-- tabs:end -->
 
 ### GET Exists
@@ -90,11 +100,11 @@ Data successfully retrieved.
 ```
 <!-- tabs:end -->
 
-## Others
+
 
 ### GET Point Cloud
 ```
-https://stardust.neogoma.com/api/v1/point_cloud/:id
+https://stardust.neogoma.com/api/v1/map/point_cloud/:id
 ```
 
 This endpoint downloads the point cloud of the map on CSV format. (If the map has NO point cloud calculated yet, this endpoint **WILL NOT** work.)
@@ -118,4 +128,49 @@ CSV file containing the list of all the points position and their color. Note th
 ```js
 x_value y_value z_value red_value_normalized green_value_normalized blue_value_normalized
 ```
+
+**404: Not found**
+
+The map or the point cloud could not be found
+
+**403: Unauthorized access**
+
+You are trying to access a map that is not yours
+
 <!-- tabs:end -->
+
+### DELETE Delete map
+```
+https://stardust.neogoma.com/api/v1/map/delete/:id
+```
+
+This endpoint allows the user to delete a map.
+
+<!-- tabs:start -->
+
+#### ** Request **
+
+**Path Parameters**
+
+| Name | Type | Description | Required |
+| --- | --- | --- | --- |
+| id | string | Your map id | The ID of the Stardust map you want to delete |
+
+#### ** Response **
+
+**200: OK**
+
+Map succesfully deleted
+
+**400: Bad parameters**
+
+Wrong parameters.
+
+**404: Not found**
+
+Requested ID doesn't match any map
+
+<!-- tabs:end -->
+
+
+## Images
