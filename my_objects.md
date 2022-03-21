@@ -23,9 +23,6 @@ Since we no longer support bundles you have to rely on using metadata to enable 
 Check out [this tutorial](https://youtu.be/ez_dbPhejZs) on how to use objects metadata in your favour.  
 
 
-#### Notes
-- Shaders and textures can be exported without the need to be on the Stardust project.
-
 ## Local content
 
 If you don't want to use the cloud solution and make your objects locally, please follow [this tutorial](developer/1_1_setup_project.md).
