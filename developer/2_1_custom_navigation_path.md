@@ -22,7 +22,7 @@ public class CustomPathRenderer : IPathRenderer
     {
         //Write needs to be done here to display the path
 
-        //You can get the coordnate of each point via the function IOctreeCoordnateObject.GetCoordinates()
+        //You can get the coordinate of each point via the function IOctreeCoordnateObject.GetCoordinates()
     }
 }
 ```
