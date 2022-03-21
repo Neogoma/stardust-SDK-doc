@@ -18,18 +18,10 @@ We had a lot of requests to support different images for different usages (floor
 - Fill in the URL of the image (example: https://neogoma.com/images/logoneogoma.png). 
 - Click on "Create object"
 
-### Interactive objects
+# Interactive objects
 Since we no longer support bundles you have to rely on using metadata to enable interactivity with objects. The scripts and interactivity will be local to your build so you have to apply this logic when the object is instantiated on the scene.
 Check out [this tutorial](https://youtu.be/ez_dbPhejZs) on how to use objects metadata in your favour.  
 
-
-
-
-
-- Select the option "Upload a picture"
-- Fill in the name
-- Fill in the picture URL.
-- Click on "Create object".
 
 #### Notes
 - Shaders and textures can be exported without the need to be on the Stardust project.
