@@ -13,7 +13,7 @@ GLB is a 3D file format that's used in Virtual Reality (VR), Augmented Reality (
 - Click on "Create object"
 
 ## Image Format
-We had a lot of request to support different images for different usages (floor plans, NFT, arts..). We decided that the most flexible way for users to use pictures in our app would be to allow people to directly link from external sources ([Imgur](https://imgur.com/), [Imgbb](https://imgbb.com/), user own server...). 
+We had a lot of requests to support different images for different usages (floor plans, NFT, arts..). We decided that the most flexible way for users to use pictures in our app would be to allow people to directly link from external sources ([Imgur](https://imgur.com/), [Imgbb](https://imgbb.com/), user own server...). 
 - Fill in the name
 - Fill in the URL of the image (example: https://neogoma.com/images/logoneogoma.png). 
 - Click on "Create object"
