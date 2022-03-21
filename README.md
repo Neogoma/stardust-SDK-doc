@@ -1,4 +1,5 @@
 ## About
+You can find this documentation [here](https://neogoma.github.io/stardust-SDK-doc/#/)
 
 The Stardust SDK is Neogoma's solution for visual positioning indoors and outdoors.
 
@@ -14,7 +15,7 @@ An app has been released for quick testing on different app stores
 [![App store](_img/icons/app_store_badge.svg ':size=150')](https://apps.apple.com/us/app/stardust-world-scale-ar/id1551574766#?platform=iphone)[![Play store](_img/icons/play.png ':size=170')](https://play.google.com/store/apps/details?id=com.neogoma.stardust&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
 
-## Prerequesite
+## Prerequisite
 The SDK requires you to have a **valid Stardust** account. You can apply for a developer account for free [here](https://stardust.neogoma.com/).
 
 ## Issues
