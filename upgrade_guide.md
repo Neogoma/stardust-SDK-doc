@@ -1,5 +1,32 @@
 # Stardust upgrade guide
 
+## Important Note for updating to versions 0.8 and over.
+
+### Add GLTF Shaders to graphics settings.
+In this version we changed the supported file format to .glb and because of that we updated the graphics settings.
+
+So make sure you double check your graphics settings by going to Edit -> Project settings -> Graphics and scrolling to **always included shaders** and check if you have 4 slots with GLTF Utilities shaders added. If not follow these steps:
+
+To ensure that Unity includes the GLTFUtility shaders in builds, you must add these shaders to the 'Always Included Shaders' list.
+
+1. Open Edit -> Project Settings
+2. Open Graphics
+3. Scroll to Always Included Shaders
+4. Under Size, increase the value by 4 and hit Enter.
+5. In the Project panel, navigate to Packages/GLTFUtility/Materials/Built-in.
+6. In this directory are 4 .shader files.
+7. Drag and drop each of the 4 files into one of the 4 newly created rows in Always Included 
+Shaders.
+
+![GLTF Shaders](_img/GLTFShaders.png ':size=80%')
+
+### Delete Plastic SCM Package
+Check and remove the Version Control - Plastic SCM package in the package manager.
+Open the Package manager by going to Window -> Package manager. Make sure you're checking packages in project and look for Version Control and remove the package if present.
+
+![Version Control](_img/versionControl.png ':size=100%')
+
+
 ## Upgrade from 0.2/0.3 to 0.5
 
 - Update to Unity 2020.2.x
@@ -41,6 +68,7 @@ In order to update your sdk to a newer release version all you have to do is dow
 - Click "All" and "Import" Unity should replace any files with changes or add new files to the existing package.
 
 ![Importing Package](_img/UpdatingPackage.jpg ':size=50%')
+
 
 ### Troubleshooting 
 
