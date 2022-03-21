@@ -36,7 +36,7 @@
 * **Dashboard**
     * update: Updating the object upload page to manage GLB files
     * update: Editor upgrade
-    * feature: Allow users download their failed relocations (premium feature)
+    * feature: Allow users to download their failed relocation pictures (premium feature)
     
 ## 0.772
 * **SDK**
