@@ -106,7 +106,7 @@ Data successfully retrieved.
 https://stardust.neogoma.com/api/v1/map/point_cloud/:id
 ```
 
-This endpoint downloads the point cloud of the map on CSV format. (If the map has NO point cloud calculated yet, this endpoint **WILL NOT** work.)
+This endpoint downloads the point cloud of the map in CSV format. (If the map has NO point cloud calculated yet, this endpoint will return a HTTP 404 not found error.)
 
 <!-- tabs:start -->
 
