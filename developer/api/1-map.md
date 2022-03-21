@@ -1,8 +1,6 @@
-# Endpoints
+# Map endpoints
 
-## Maps
-
-### GET Batches
+## GET Batches
 ```
 https://stardust.neogoma.com/api/v1/map/batches/:id
 ```
@@ -11,15 +9,15 @@ This endpoint allows the user to get all the mapping data of the map.
 
 <!-- tabs:start -->
 
-#### ** Request **
+### ** Request **
 
 **Path Parameters**
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| id | string | Your map id | The ID of the Stardust map you want to get data for |
+| id | string | The ID of the Stardust map you want to get data for | YES |
 
-#### ** Response **
+### ** Response **
 
 **200: OK**
 
@@ -71,7 +69,7 @@ Requested ID doesn't match any map.
 
 <!-- tabs:end -->
 
-### GET Exists
+## GET Exists
 ```
 https://stardust.neogoma.com/api/v1/map/exists/:id
 ```
@@ -80,15 +78,15 @@ This endpoint allows the user to know if a map exists or not.
 
 <!-- tabs:start -->
 
-#### ** Request **
+### ** Request **
 
 **Path Parameters**
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| id | string | Your map id | The ID of the Stardust map you want to get data for |
+| id | string | The ID of the Stardust map you want to get data for | YES |
 
-#### ** Response **
+### ** Response **
 
 **200: OK**
 
@@ -102,7 +100,7 @@ Data successfully retrieved.
 
 
 
-### GET Point Cloud
+## GET Point Cloud
 ```
 https://stardust.neogoma.com/api/v1/map/point_cloud/:id
 ```
@@ -111,13 +109,13 @@ This endpoint downloads the point cloud of the map on CSV format. (If the map ha
 
 <!-- tabs:start -->
 
-#### ** Request **
+### ** Request **
 
 **Path Parameters**
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| id | string | Your map id | The ID of the Stardust map you want to get point cloud for |
+| id | string | The ID of the Stardust map you want to get point cloud for | YES |
 
 #### ** Response **
 
@@ -139,7 +137,7 @@ You are trying to access a map that is not yours
 
 <!-- tabs:end -->
 
-### DELETE Delete map
+## DELETE Delete map
 ```
 https://stardust.neogoma.com/api/v1/map/delete/:id
 ```
@@ -148,15 +146,15 @@ This endpoint allows the user to delete a map.
 
 <!-- tabs:start -->
 
-#### ** Request **
+### ** Request **
 
 **Path Parameters**
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| id | string | Your map id | The ID of the Stardust map you want to delete |
+| id | string | The ID of the Stardust map you want to delete | YES |
 
-#### ** Response **
+### ** Response **
 
 **200: OK**
 
@@ -171,6 +169,3 @@ Wrong parameters.
 Requested ID doesn't match any map
 
 <!-- tabs:end -->
-
-
-## Images

@@ -35,8 +35,9 @@
   * [Map relocation manager](developer/comp_map_relocation_manager.md)
   * [Object controller](developer/comp_object_controller.md)
   * **API**
-  * [Intro](developer/api_intro.md)
-  * [Endpoints](developer/api_endpoint.md)
+  * [Intro](developer/api/0-intro.md)
+  * [Map](developer/api/1-map.md)
+  * [Images](developer/api/2-object.md)
 
 
 
