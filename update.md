@@ -54,7 +54,7 @@
 
 ## 0.76
 * **SDK**
-    * update: Adding the property RelocationReliable on the relocation results to feedback user on the relocation results
+    * update: Adding the property `RelocationReliable` on the relocation results to feedback user on the relocation results
 
 ## 0.75
 * **SDK**
