@@ -68,7 +68,7 @@
 ## 0.65
 * **SDK**
     * update: Reducing capture memory leaks
-    * update: Updating the file structure to allow customs data provider (for non AR foundation datas)
+    * update: Updating the file structure to allow custom data provider (for non AR foundation data)
 
 ## 0.622
 * **SDK**
