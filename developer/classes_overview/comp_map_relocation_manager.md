@@ -9,7 +9,7 @@ MapRelocationManager objectController = MapRelocationManager.Instance;
 The Map relocation manager handles the download of the map data as well as the relocation requests.
 
 ```cs
-public void Start{
+public void Start(){
     //Get instance
     MapRelocationManager relocationManager = MapRelocationManager.Instance;
 

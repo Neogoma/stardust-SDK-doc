@@ -31,7 +31,7 @@
   * [4. Link all providers to stardust](developer/3_4_plug_everything_together.md)
   * **Classes overview**
   * [Session controller](developer/classes_overview/comp_session_controller.md)
-  * [Data uploader](developer/classes_overview/comp_map_data_uploader.md)
+  * [Map data uploader](developer/classes_overview/comp_map_data_uploader.md)
   * [Map relocation manager](developer/classes_overview/comp_map_relocation_manager.md)
   * [Object controller](developer/classes_overview/comp_object_controller.md)
   * **API**

@@ -55,12 +55,12 @@ Please note that if you stop the capture, the datas that are stored on device bu
 ```cs
 //Start sending data to server
 public void StartCapturingData(){
-    MapDataUploader.Instance.StartSendingData();
+    MapDataUploader.Instance.StartCapturingDatas();
 }
 
 //Stops sending data to server
 public void StopCapturingData(){
-    MapDataUploader.Instance.StopSendingDatas();
+    MapDataUploader.Instance.StopCapturingDatas();
 }
 ```
 
@@ -74,10 +74,22 @@ public void GenerateMap(){
 ```
 
 ## Run update (existing map)
-In order to update a map you need to setup the session first
+In order to update a map you need to setup the session first and create the batch first.
 ```cs
+
+public void Start(){
+    //Listen to the batch setup
+    MapDataUploader.Instance.onBatchReadyToUpdate.AddListener(OnBatchReady);
+}
+
+//Sets the current session and prepares the batch on server
 public void SetActiveSession(Session session){
     MapDataUploader.Instance.SetSession(selectedSession);
+    MapDataUploader.Instance.SetUpdateBatch();
+}
+
+public void OnBatchReady(){
+    //You can start mapping here 
 }
 ```
 
