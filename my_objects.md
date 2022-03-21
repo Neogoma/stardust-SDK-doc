@@ -9,7 +9,7 @@ Then you will have the choice between 2 formats:
 
 GLB is a 3D file format that's used in Virtual Reality (VR), Augmented Reality (AR), games, and web applications because it supports motion and animation. GLB files are a binary version of the GL Transmission Format (glTF) file,
 - Fill in the name
-- Browse and choose your .GLB file to upload.ee (max size 80 mb). 
+- Browse and choose your .GLB file to upload (max size allowed is 80 MB). 
 - Click on "Create object"
 
 ## Image Format
