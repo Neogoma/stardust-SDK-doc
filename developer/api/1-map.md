@@ -59,10 +59,6 @@ Data successfully retrieved.
 ]
 ```
 
-**400: Bad parameters**
-
-Wrong parameters.
-
 **404: Not found**
 
 Requested ID doesn't match any map.
@@ -183,10 +179,6 @@ This endpoint allows the user to delete a map.
 **200: OK**
 
 Map succesfully deleted
-
-**400: Bad parameters**
-
-Wrong parameters.
 
 **404: Not found**
 

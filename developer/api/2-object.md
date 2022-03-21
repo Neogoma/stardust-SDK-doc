@@ -33,6 +33,7 @@ This endpoint allows the user to create an image.
 
 Wrong parameters.
 ```js
+//If your image_url is not in the URL format
 {
     "status": 400,
     "data": {
@@ -73,7 +74,7 @@ Image updated
 ```js
 {
     "status": 200,
-    "data": "ID of the new object"
+    "data": "OK"
 }
 ```
 
@@ -82,6 +83,7 @@ Image updated
 Wrong parameters.
 
 ```js
+//If your image_url is not in URL format
 {
     "status": 400,
     "data": {
@@ -115,12 +117,13 @@ This endpoint allows the user to delete an image.
 
 **200: OK**
 
-Image deleted
-
-
-**400: Bad request**
-
-Wrong parameters.
+Image deleted.
+```js
+{
+    "status": 200,
+    "data": "OK"
+}
+```
 
 **404: Not found**
 
