@@ -19,7 +19,7 @@ We had a lot of requests to support different images for different usages (floor
 - Click on "Create object"
 
 # Interactive objects
-Since we no longer support bundles you have to rely on using metadata to enable interactivity with objects. The scripts and interactivity will be local to your build so you have to apply this logic when the object is instantiated on the scene.
+Since we no longer support bundles, you have to rely on using metadata to enable interactivity with objects. The scripts and interactivity will be local to your build, so you have to apply this logic when the object is instantiated on the scene.
 Check out [this tutorial](https://youtu.be/ez_dbPhejZs) on how to use objects metadata in your favour.  
 
 
