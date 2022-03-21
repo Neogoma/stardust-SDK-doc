@@ -73,7 +73,7 @@ public void CreateSelectedObject()
     Vector3 scale=Vector3.one;
 
     //Instantiate object and save it on server
-    objectController.CreateAndSaveObject(pos, rot, session, scale,selectedBundle);    
+    objectController.CreateViewAndSaveModel(pos, rot, session, scale,null,selectedBundle);    
     
 }
 
