@@ -1,7 +1,7 @@
 # Uploading an object
 
 - Go to the [object list page](https://stardust.neogoma.com/object_list) and click create new object.
-- Once you're on the object upload page select [create a new object](https://stardust.neogoma.com/add_bundle)
+- Once you're on the object upload page, select [create a new object](https://stardust.neogoma.com/add_bundle)
 
 Then you will have the choice between 2 formats.
 
