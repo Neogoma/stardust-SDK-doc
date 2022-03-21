@@ -66,7 +66,12 @@ Wrong parameters.
 **404: Not found**
 
 Requested ID doesn't match any map.
-
+```js
+{
+    "status": 404,
+    "data": "Map does not exist"
+}
+```
 <!-- tabs:end -->
 
 ## GET Exists
@@ -121,7 +126,7 @@ This endpoint downloads the point cloud of the map on CSV format. (If the map ha
 
 **200: OK**
 
-CSV file containing the list of all the points position and their color. Note that the RGB colors are normalized (between 0 and 1);
+CSV file containing the list of all the points position and their color. Note that the RGB colors are normalized (between 0 and 1).
 
 ```js
 x_value y_value z_value red_value_normalized green_value_normalized blue_value_normalized
@@ -130,10 +135,29 @@ x_value y_value z_value red_value_normalized green_value_normalized blue_value_n
 **404: Not found**
 
 The map or the point cloud could not be found
+```js
+//If the map doesn't exist
+{
+    "status": 404,
+    "data": "Map does not exist"
+}
+//If the point cloud is not available yet
+{
+    "status": 404,
+    "data": "Point cloud not available"
+}
+```
 
 **403: Unauthorized access**
 
-You are trying to access a map that is not yours
+You are trying to access a map that is not yours.
+```js
+{
+    "status": 403,
+    "data": "This is not your map"
+}
+```
+
 
 <!-- tabs:end -->
 
@@ -167,5 +191,12 @@ Wrong parameters.
 **404: Not found**
 
 Requested ID doesn't match any map
+```js
+//If the map doesn't exist
+{
+    "status": 404,
+    "data": "Map does not exist"
+}
+```
 
 <!-- tabs:end -->

@@ -89,7 +89,7 @@ public void SetActiveSession(Session session){
 }
 
 public void OnBatchReady(){
-    //You can start mapping here 
+    //You can start mapping starting from here 
 }
 ```
 
