@@ -21,7 +21,7 @@
 
 ## 0.85
 * **SDK**
-    * feature: Sending necessary datas for analytics
+    * feature: Sending necessary data for analytics
 * **Dashboard**
     * feature: Analytics editor for paying users
 
