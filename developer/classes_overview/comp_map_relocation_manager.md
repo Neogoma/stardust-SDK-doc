@@ -20,10 +20,10 @@ public void Start{
     relocationManager.onMapDownloadStarted.AddListener(OnMapStartDownloading);
 
     //Called when the position in map has been found after relocation request
-    relocationManager.onPositionFound.AddListener(OnPositionMatched);
+    relocationManager.onLocationFound.AddListener(OnPositionMatched);
 
     //Called when the position in map has not been found after relocation request
-    relocationManager.onPositionNotFound.AddListener(OnPositionMatchFailed);
+    relocationManager.onLocationnotFound.AddListener(OnPositionMatchFailed);
 
     //Called when you reached the maximum of monthly requests
     relocationManager.onMaxRequestReached.AddListener(OnMaximumRequestReached);
@@ -39,9 +39,9 @@ private void OnMapStartDownloading()
     Debug.Log("Start to download the map");
 }
 
-private void OnPositionMatched(RelocationResults positionMatched,CoordinateSystem newCoords)
+private void OnPositionMatched()
 {
-    Debug.Log("You are at " + positionMatched.LocatedPosition);  
+    Debug.Log("Position found");  
 }
 
 private void OnPositionMatchFailed()
