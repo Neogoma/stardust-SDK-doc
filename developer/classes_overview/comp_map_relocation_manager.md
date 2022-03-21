@@ -23,7 +23,7 @@ public void Start(){
     relocationManager.onLocationFound.AddListener(OnPositionMatched);
 
     //Called when the position in map has not been found after relocation request
-    relocationManager.onLocationnotFound.AddListener(OnPositionMatchFailed);
+    relocationManager.onLocationNotFound.AddListener(OnPositionMatchFailed);
 
     //Called when you reached the maximum of monthly requests
     relocationManager.onMaxRequestReached.AddListener(OnMaximumRequestReached);
