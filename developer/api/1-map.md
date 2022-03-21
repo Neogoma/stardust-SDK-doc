@@ -124,7 +124,7 @@ This endpoint downloads the point cloud of the map in CSV format. (If the map ha
 
 CSV file containing the list of all the points position and their color. Note that the RGB colors are normalized (between 0 and 1).
 
-```js
+```csv
 x_value y_value z_value red_value_normalized green_value_normalized blue_value_normalized
 ```
 
