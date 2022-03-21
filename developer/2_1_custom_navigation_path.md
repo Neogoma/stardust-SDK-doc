@@ -20,8 +20,7 @@ public class CustomPathRenderer : IPathRenderer
 
     public void DisplayPath(List<IOctreeCoordinateObject> allNavigationsPoint)
     {
-        //Write needs to be done here to display the path
-
+        //Write what needs to be done here to display the path
         //You can get the coordinate of each point via the function IOctreeCoordnateObject.GetCoordinates()
     }
 }
