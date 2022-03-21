@@ -9,4 +9,4 @@ The following headers need to be setup to authenticate your account in the reque
 | --- | --- |
 | Authorization | "Bearer "+[API KEY] |
 
-If you don't provide the token or you try to access data that are not yours you trigger a 403 forbidden error.
+If you don't provide the token or you try to access data that are not yours, a HTTP 403 forbidden error will be returned in the response.
