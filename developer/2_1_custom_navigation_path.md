@@ -29,7 +29,7 @@ public class CustomPathRenderer : IPathRenderer
 
 You can customize the class as much as you want but you need to fill in both methods:
 - ClearPath() is called when the path is recalculated and cleans the path view
-- DisplayPath(List<IOctreeCoordnateObject> allNavigationsPoint) is called when the path has been calculated and needs to be displayed. This is where you instanciate your prefabs or models for showing the path. Each ```IOctreeCoordinateObject``` represents a point and has a method ```Vector3 GetCoordinates()```to get the coordnates. 
+- DisplayPath(List<IOctreeCoordnateObject> allNavigationsPoint) is called when the path has been calculated and needs to be displayed. This is where you instantiate your prefabs or models for showing the path. Each ```IOctreeCoordinateObject``` represents a point and has a method ```Vector3 GetCoordinates()```to get the coordinates. 
 
  **NOTE**: we only provide the list of navigation points! You can use it to decide where to position your models!
 
