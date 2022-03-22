@@ -22,6 +22,10 @@ public void Start(){
     //Called when the position in map has been found after relocation request
     relocationManager.onLocationFound.AddListener(OnPositionMatched);
 
+    //Called when the position in map has been found after relocation request (returns the relocation data)
+    relocationManager.onPositionFound.AddListener(OnPositionFound);
+
+
     //Called when the position in map has not been found after relocation request
     relocationManager.onLocationNotFound.AddListener(OnPositionMatchFailed);
 
@@ -42,6 +46,11 @@ private void OnMapStartDownloading()
 private void OnPositionMatched()
 {
     Debug.Log("Position found");  
+}
+
+private void OnPositionFound(RelocationResults positionMatched,CoordinateSystem newCoords)
+{
+    Debug.Log("You are at " + positionMatched.LocatedPosition);  
 }
 
 private void OnPositionMatchFailed()
