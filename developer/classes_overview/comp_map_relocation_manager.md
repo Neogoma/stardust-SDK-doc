@@ -9,7 +9,7 @@ MapRelocationManager objectController = MapRelocationManager.Instance;
 The Map relocation manager handles the download of the map data as well as the relocation requests.
 
 ```cs
-public void Start{
+public void Start(){
     //Get instance
     MapRelocationManager relocationManager = MapRelocationManager.Instance;
 
@@ -20,10 +20,14 @@ public void Start{
     relocationManager.onMapDownloadStarted.AddListener(OnMapStartDownloading);
 
     //Called when the position in map has been found after relocation request
-    relocationManager.onPositionFound.AddListener(OnPositionMatched);
+    relocationManager.onLocationFound.AddListener(OnPositionMatched);
+
+    //Called when the position in map has been found after relocation request (returns the relocation data)
+    relocationManager.onPositionFound.AddListener(OnPositionFound);
+
 
     //Called when the position in map has not been found after relocation request
-    relocationManager.onPositionNotFound.AddListener(OnPositionMatchFailed);
+    relocationManager.onLocationNotFound.AddListener(OnPositionMatchFailed);
 
     //Called when you reached the maximum of monthly requests
     relocationManager.onMaxRequestReached.AddListener(OnMaximumRequestReached);
@@ -39,7 +43,12 @@ private void OnMapStartDownloading()
     Debug.Log("Start to download the map");
 }
 
-private void OnPositionMatched(RelocationResults positionMatched,CoordinateSystem newCoords)
+private void OnPositionMatched()
+{
+    Debug.Log("Position found");  
+}
+
+private void OnPositionFound(RelocationResults positionMatched,CoordinateSystem newCoords)
 {
     Debug.Log("You are at " + positionMatched.LocatedPosition);  
 }

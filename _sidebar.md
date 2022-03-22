@@ -30,11 +30,14 @@
   * [3. Device position](developer/3_3_provide_device_position.md)
   * [4. Link all providers to stardust](developer/3_4_plug_everything_together.md)
   * **Classes overview**
-  * [Session controller](developer/comp_session_controller.md)
-  * [Data uploader](developer/comp_map_data_uploader.md)
-  * [Map relocation manager](developer/comp_map_relocation_manager.md)
-  * [Object controller](developer/comp_object_controller.md)
-  
+  * [Session controller](developer/classes_overview/comp_session_controller.md)
+  * [Map data uploader](developer/classes_overview/comp_map_data_uploader.md)
+  * [Map relocation manager](developer/classes_overview/comp_map_relocation_manager.md)
+  * [Object controller](developer/classes_overview/comp_object_controller.md)
+  * **API**
+  * [API - Intro](developer/api/0-intro.md)
+  * [API - Maps](developer/api/1-map.md)
+  * [API - Images](developer/api/2-object.md)
 
 
 
