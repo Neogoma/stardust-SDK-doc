@@ -11,9 +11,7 @@ First we need to prepare the script that will initialize the relocation manager.
 
 1. Create a new script called **LocalContentRelocation** 
 
-2. Now delete the ```void Update()``` method and the attribute ```public string id;``` your class should now look like this
-
-3. Create a method ```private void MapDownloaded(Session session, GameObject map)```. It will be called once the SDK finishes downloading the map from the server. Leave it empty for now.
+2. Now delete the ```void Update()``` method and the attribute ```public string uuid;``` your class should now look like this
 
 ```cs
 using com.Neogoma.Stardust.API.Relocation;
@@ -42,6 +40,13 @@ Add the **LocalContentRelocation** script to the **AR Session** gameobject.
 Once this is done, fill in the id field with your **Map ID** of the [dashboard](https://stardust.neogoma.com/map_list)
 
 ![Session setup](img/setup/local_session_setup.png)
+
+## Assign your own local content to the Content prefab of Map Relocation Manager
+
+Click on the StardustSDK prefab, then look for the Map Relocation Manager script. Then you can setup your **OWN** content as a "content prefab".
+
+![Content prefab](img/setup/content_setup.jpg)
+
 
 ## Call the relocation when you click on the button
 
