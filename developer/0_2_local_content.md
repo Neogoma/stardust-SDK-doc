@@ -43,7 +43,7 @@ Once this is done, fill in the id field with your **Map ID** of the [dashboard](
 
 ## Assign your own local content to the Content prefab of Map Relocation Manager
 
-Click on the StardustSDK prefab, then look for eh Map Relocation Manager script. Then you can setup your **OWN** content as a "content prefab".
+Click on the StardustSDK prefab, then look for the Map Relocation Manager script. Then you can setup your **OWN** content as a "content prefab".
 
 ![Content prefab](img/setup/content_setup.jpg)
 
