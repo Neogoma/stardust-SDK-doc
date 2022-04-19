@@ -34,6 +34,7 @@
   * [Map data uploader](developer/classes_overview/comp_map_data_uploader.md)
   * [Map relocation manager](developer/classes_overview/comp_map_relocation_manager.md)
   * [Object controller](developer/classes_overview/comp_object_controller.md)
+  * [Offline mapper (premium)](developer/classes_overview/comp_offline_mapper.md)
   * **API**
   * [API - Intro](developer/api/0-intro.md)
   * [API - Maps](developer/api/1-map.md)
