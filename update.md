@@ -1,5 +1,13 @@
 # Update log
 
+## 0.91
+* **SDK (premium feature)**
+    * feat: Allowing offline update
+
+## 0.905
+* **SDK (premium feature)**
+    * update: Renaming methods for offline mapping
+
 ## 0.902
 * **SDK**
     * feature: URL's can now be used for displaying pictures
