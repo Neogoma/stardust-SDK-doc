@@ -30,7 +30,6 @@ Here's a table explaining how to properly map different spaces. The red icon sho
 | **Small room** | ![Picture taken](_img/smallroom.png) |
 | **Big/multiple rooms**  | ![Picture taken](_img/bigroom.png)  |
 |  **Streets/outdoor spaces** | ![Picture taken](_img/street.png)  |
-|  **Large open areas** | ![Picture taken](_img/openarea.png)  |
 |  **Walls/Flat surfaces** | ![Picture taken](_img/wall.png) |
 |  **Point of interest** | ![Picture taken](_img/point.png) |
 
