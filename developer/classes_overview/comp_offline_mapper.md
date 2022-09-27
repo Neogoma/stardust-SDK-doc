@@ -107,6 +107,35 @@ public void Start()
 }
 ```
 
+# Delete
+
+## Delete all data
+```cs
+//Uploads the data online
+public void DeleteAllLocalData()
+{
+    OfflineMapper.Instance.DeleteAllLocalDatas();
+}
+```
+
+## Delete map using name
+```cs
+//Deletes the local mapping data for a map
+public void DeleteMapWithName(string name)
+{
+    OfflineMapper.Instance.DeleteAllLocalDatas(string name);
+}
+```
+
+## Delete map using uuid
+```cs
+//Deletes a local update for a map using UUID
+public void DeleteLocalUpdate(string uuid)
+{
+    OfflineMapper.Instance.DeleteLocalUpdate(string uuid);
+}
+```
+
 # Events
 The offline mapper has multiple events depending on the situation
 ```cs

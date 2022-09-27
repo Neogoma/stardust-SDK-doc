@@ -1,5 +1,15 @@
 # Update log
 
+## 1.0
+* **SDK**
+    * feat: update data capture for 3D meshing
+* **Dashboard**
+    * feat: keyboard navigation on editor
+    * feat: increased editor loading speed
+    * feat: 3D model of the space can now be viewed in the editor
+* **API (premium feature)**
+    * feat: download 3D model of the scanned space
+
 ## 0.91
 * **SDK (premium feature)**
     * feat: Allowing offline update
