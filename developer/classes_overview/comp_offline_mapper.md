@@ -107,6 +107,24 @@ public void Start()
 }
 ```
 
+# Delete data on the device
+### Delete all data
+```cs
+//Uploads the data online
+public void DeleteAllLocalData()
+{
+    OfflineMapper.Instance.DeleteAllLocalDatas();
+}
+```
+
+### Delete map using name
+```cs
+//Uploads the data online
+public void DeleteMapWithName(string name)
+{
+    OfflineMapper.Instance.DeleteAllLocalDatas();
+}
+```
 # Events
 The offline mapper has multiple events depending on the situation
 ```cs
