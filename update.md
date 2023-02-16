@@ -1,5 +1,14 @@
 # Update log
 
+## 1.11
+* **Plugin**
+    * fix: the first picture now becomes the origin of the map
+    * fix: offline mapping now sends HD data for all android phones **(premium feature)**
+
+## 1.1
+* **Dashboard (premium feature)**
+    * feat: allow the creation of composite maps
+
 ## 1.0
 * **SDK**
     * feat: update data capture for 3D meshing
