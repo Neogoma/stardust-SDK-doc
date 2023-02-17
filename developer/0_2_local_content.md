@@ -21,6 +21,11 @@ public class LocalContentRelocation : MonoBehaviour
 {
     public string uuid;
 
+    public void Start()
+    {
+        MapRelocationManager.Instance.onPositionFound.AddListener(PositionFound);
+    }
+
     public void Relocate()
     {
         MapRelocationManager.Instance.LocateCurrentPosition(uuid);

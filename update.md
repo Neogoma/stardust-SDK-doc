@@ -1,5 +1,9 @@
 # Update log
 
+## 1.12
+* **Plugin**
+    * fix: correct the data coming from lidar devices
+
 ## 1.11
 * **Plugin**
     * fix: the first picture now becomes the origin of the map
