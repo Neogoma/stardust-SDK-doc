@@ -27,7 +27,17 @@ Open the Package manager by going to Window -> Package manager. Make sure you're
 ![Version Control](_img/versionControl.png ':size=100%')
 
 
-## Upgrade from 0.2/0.3 to 0.5
+## Upgrade from  to 1.x to 1.13
+- Update to Unity 2021.3.x
+- Update to ARFoundation 5.0.3 (Unity package)
+- Update to Unity ARKit plugin 5.0.3 (Unity package)
+- Update to Unity ARCore XR plugin 5.0.3 (Unity package)
+
+### PathFindingManager major change
+
+- **OnNavigationDataReady** events now returns an array of **ITarget[]**
+
+## Upgrade from 0.2/0.3 to 1.x
 
 - Update to Unity 2020.2.x
 - Update to ARFoundation 4.1.5 (Unity package)

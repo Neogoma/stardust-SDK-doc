@@ -1,4 +1,7 @@
 # Update log
+## 1.13
+* **Plugin**
+    * feature: update the navigation plugin to handle unconnected batches
 
 ## 1.12
 * **Plugin**
