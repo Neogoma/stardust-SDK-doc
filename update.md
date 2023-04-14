@@ -1,4 +1,9 @@
 # Update log
+
+## 1.14
+* **Plugin**
+    * fix: objects are sent in the right coordnates if using the WORLD space
+    * feature: offline mapping map creation method returns the name of the map created **(premium feature)**
 ## 1.13
 * **Plugin**
     * feature: update the navigation plugin to handle unconnected batches

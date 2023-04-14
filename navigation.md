@@ -89,4 +89,4 @@ This makes the map impossible to navigate (navigation can freeze), all path shou
 
 
 ### Note
-You can put a target anywhere you want but be aware that if you do not put your target on a navigable area the pathfinding algorithm can't guarantee the correct result of your navigation. If you want to make an area navigable just your map.
+You can put a target anywhere you want but be aware that if you do not put your target on a navigable area the pathfinding algorithm can't guarantee the correct result of your navigation. If you want to make an area navigable just update your map or use the composite function if you have the tiers.
