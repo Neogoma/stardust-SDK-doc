@@ -37,7 +37,7 @@ public class LocalContentRelocation : MonoBehaviour
 
 Just create a button wherever you want in your scene. For this example I will create it in the middle of the screen.
 
-![Session setup](img/setup/ui_setup.png)
+![Button setup](img/setup/ui_setup.png)
 
 ## Assign your LocalContentRelocation to the ar session
 
