@@ -1,8 +1,12 @@
 # Update log
 
+## 1.141
+* **Plugin**
+  * Reduce the memory footprint of the offline mapping
+  * 
 ## 1.14
 * **Plugin**
-    * fix: objects are sent in the right coordnates if using the WORLD space
+    * fix: objects are sent in the right coordinates if using the WORLD space
     * feature: offline mapping map creation method returns the name of the map created **(premium feature)**
 ## 1.13
 * **Plugin**
@@ -15,7 +19,7 @@
 ## 1.11
 * **Plugin**
     * fix: the first picture now becomes the origin of the map
-    * fix: offline mapping now sends HD data for all android phones **(premium feature)**
+    * fix: offline mapping now sends HD data for all Android phones **(premium feature)**
 
 ## 1.1
 * **Dashboard (premium feature)**
@@ -25,7 +29,7 @@
 * **SDK**
     * feat: update data capture for 3D meshing
 * **Dashboard**
-    * feat: keyboard navigation on editor
+    * feat: keyboard navigation on the editor
     * feat: increased editor loading speed
     * feat: 3D model of the space can now be viewed in the editor
 * **API (premium feature)**
@@ -37,7 +41,7 @@
 
 ## 0.905
 * **SDK (premium feature)**
-    * update: Renaming methods for offline mapping
+    * Update: Renaming methods for offline mapping
 
 ## 0.902
 * **SDK**
