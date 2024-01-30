@@ -30,6 +30,12 @@ public class LocalContentRelocation : MonoBehaviour
     {
         MapRelocationManager.Instance.LocateCurrentPosition(uuid);
     }
+
+    private void PositionFound(RelocationResults results, CoordinateSystem coordinates)
+    {
+        Debug.Log("POSITION FOUND");
+        Handheld.Vibrate();
+    }
 }
 ```
 
